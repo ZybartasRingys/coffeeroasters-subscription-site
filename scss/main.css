@@ -11956,4 +11956,53 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.header {
+  width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.hero-container {
+  width: 1280px;
+  height: 600px;
+  background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.hero-container .col {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+.hero-container .hero-text {
+  width: 493px;
+  height: 367px;
+  color: white;
+}
+
+.coffe-container {
+  width: 100%;
+  max-width: 1111px;
+  height: 525px;
+}
+
+.coffe-container .coffe-heading h1, .coffe-container .coffe-heading .h1 {
+  font-size: 28px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=main.css.map */
