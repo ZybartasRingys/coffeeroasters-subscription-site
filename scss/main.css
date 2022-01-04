@@ -11957,19 +11957,12 @@ fieldset:disabled .btn {
   }
 }
 
-.header {
-  width: 1280px;
-  height: 100%;
-  margin: auto;
-}
-
-.navbar {
-  width: 100%;
-}
-
 .hero-container {
-  width: 1280px;
   height: 600px;
+}
+
+.hero-col {
+  height: 100%;
   background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -11977,26 +11970,41 @@ fieldset:disabled .btn {
   border-radius: 10px;
 }
 
-.hero-container .col {
-  width: 100%;
-  height: 100%;
-  border: 2px solid red;
+.card-img-top {
+  width: 72px;
+  height: 72px;
 }
 
-.hero-container .hero-text {
-  width: 493px;
-  height: 367px;
-  color: white;
+.why-container {
+  height: 902px;
+  background-color: #2c343e;
+  border-radius: 10px;
 }
 
-.coffe-container {
-  width: 100%;
-  max-width: 1111px;
-  height: 525px;
+.testemonials-card {
+  background-color: #0e8784;
+  border-radius: 8px;
 }
 
-.coffe-container .coffe-heading h1, .coffe-container .coffe-heading .h1 {
-  font-size: 28px;
+@media (max-width: 575.98px) {
+  .navbar-nav {
+    display: none;
+  }
+  .logo {
+    width: 163px;
+    height: 18px;
+  }
+  .hero-col {
+    height: 100%;
+    background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .testemonials {
+    margin-top: -650px;
+  }
 }
 
 * {
