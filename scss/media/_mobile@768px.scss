@@ -10,6 +10,12 @@
     height: 18px;
   }
 
+  //hero container
+
+  .hero-row {
+    height: 500px;
+  }
+
   // why section
 
   .hero-col {
@@ -23,5 +29,11 @@
 
   .testemonials {
     margin-top: -650px;
+  }
+
+  //hamburger
+
+  .hamburger {
+    display: block;
   }
 }

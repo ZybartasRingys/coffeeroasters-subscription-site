@@ -1,0 +1,16 @@
+.main-btn {
+  width: 217px;
+  height: 56px;
+  background-color: $Darkcyan;
+  cursor: pointer;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: $LightCream;
+
+  &:hover {
+    color: $ButtonHover;
+  }
+}

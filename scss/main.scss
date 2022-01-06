@@ -1,10 +1,29 @@
+//node modules
 @import "..//node_modules/bootstrap/scss/bootstrap.scss";
-@import "..//scss/main-pages/index";
+
+// utilities
+@import "..//scss/utilities/variables";
 @import "..//scss/utilities/mixins";
+
+// main pages
+@import "..//scss/main-pages/index";
+
+//media queries
 @import "..//scss/media/mobile@768px";
+
+//components
+@import "..//scss/components/buttons";
+@import "..//scss/components/hamburger";
+@import "..//scss/components/footer";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  background: $LightCream;
 }

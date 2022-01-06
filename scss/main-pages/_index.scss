@@ -1,10 +1,8 @@
 @import "..//utilities/mixins";
 
-// navbar
-
 //hero container
 
-.hero-container {
+.hero-row {
   height: 600px;
 }
 
@@ -13,14 +11,48 @@
   background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
   @include backgroundIMG;
   border-radius: 10px;
+
+  h1 {
+    @include frauces40px;
+    color: $LightCream;
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include barlow15px;
+    color: $LightCream;
+    opacity: 0.8;
+    margin-bottom: 40px;
+  }
 }
 
-// card
+// hero container end
 
-.card-img-top {
-  width: 72px;
-  height: 72px;
+// collection section
+
+.collection {
+  background: $LightCream;
+  .card {
+    background: $LightCream;
+  }
+  h3 {
+    @include frauces24px;
+    color: $DarkGreyBlue;
+  }
+
+  P {
+    @include barlow15px;
+    color: $DarkGreyBlue;
+  }
 }
+
+// coffe images
+.coffe {
+  width: 200px;
+  height: 151px;
+}
+
+// collection section end
 
 //why container
 
@@ -28,9 +60,73 @@
   height: 902px;
   background-color: #2c343e;
   border-radius: 10px;
+
+  .why-text {
+    h1 {
+      @include frauces28px;
+      color: $LightCream;
+    }
+
+    p {
+      @include barlow15px;
+      color: $LightCream;
+      opacity: 0.8;
+    }
+  }
 }
+
+//why container end
+
+// testemonial cards
 
 .testemonials-card {
   background-color: #0e8784;
   border-radius: 8px;
+
+  h5 {
+    @include frauces24px;
+    color: $LightCream;
+  }
+
+  p {
+    @include barlow15px;
+    color: $LightCream;
+  }
 }
+
+// card image
+
+.card-img-top {
+  width: 72px;
+  height: 72px;
+}
+
+// testemonial cards end
+
+// how it works
+
+.how-heading {
+  @include frauces24px;
+  color: $Grey;
+}
+
+.how-card {
+  background-color: $LightCream;
+  border: none;
+
+  h2 {
+    @include frauces72px;
+    color: $PaleOrange;
+  }
+
+  h3 {
+    @include frauces28px;
+    color: $DarkGreyBlue;
+  }
+
+  p {
+    @include barlow15px;
+    color: $DarkGreyBlue;
+  }
+}
+// how it works end

@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11957,7 +11958,7 @@ fieldset:disabled .btn {
   }
 }
 
-.hero-container {
+.hero-row {
   height: 600px;
 }
 
@@ -11970,9 +11971,56 @@ fieldset:disabled .btn {
   border-radius: 10px;
 }
 
-.card-img-top {
-  width: 72px;
-  height: 72px;
+.hero-col h1, .hero-col .h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 32px;
+  color: #fefcf7;
+  margin-bottom: 20px;
+}
+
+.hero-col p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.collection {
+  background: #fefcf7;
+}
+
+.collection .card {
+  background: #fefcf7;
+}
+
+.collection h3, .collection .h3 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.collection P {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
+}
+
+.coffe {
+  width: 200px;
+  height: 151px;
 }
 
 .why-container {
@@ -11981,9 +12029,92 @@ fieldset:disabled .btn {
   border-radius: 10px;
 }
 
+.why-container .why-text h1, .why-container .why-text .h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #fefcf7;
+}
+
+.why-container .why-text p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
 .testemonials-card {
   background-color: #0e8784;
   border-radius: 8px;
+}
+
+.testemonials-card h5, .testemonials-card .h5 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fefcf7;
+}
+
+.testemonials-card p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+}
+
+.card-img-top {
+  width: 72px;
+  height: 72px;
+}
+
+.how-heading {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.how-card {
+  background-color: #fefcf7;
+  border: none;
+}
+
+.how-card h2, .how-card .h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+
+.how-card h3, .how-card .h3 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.how-card p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
 }
 
 @media (max-width: 575.98px) {
@@ -11993,6 +12124,9 @@ fieldset:disabled .btn {
   .logo {
     width: 163px;
     height: 18px;
+  }
+  .hero-row {
+    height: 500px;
   }
   .hero-col {
     height: 100%;
@@ -12005,6 +12139,55 @@ fieldset:disabled .btn {
   .testemonials {
     margin-top: -650px;
   }
+  .hamburger {
+    display: block;
+  }
+}
+
+.main-btn {
+  width: 217px;
+  height: 56px;
+  background-color: #0e8784;
+  cursor: pointer;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fefcf7;
+}
+
+.main-btn:hover {
+  color: #66d2cf;
+}
+
+.hamburger {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 325px;
+  top: 19px;
+  display: none;
+  cursor: pointer;
+}
+
+.footer-container {
+  background-color: #2c343e;
+}
+
+.footer-navbar a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: #83888f;
+  text-transform: uppercase;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-right: 20px;
 }
 
 * {
@@ -12012,5 +12195,11 @@ fieldset:disabled .btn {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  background: #fefcf7;
 }
 /*# sourceMappingURL=main.css.map */
