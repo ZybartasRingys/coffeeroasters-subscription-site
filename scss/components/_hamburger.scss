@@ -2,8 +2,17 @@
   position: absolute;
   width: 16px;
   height: 15px;
-  left: 325px;
-  top: 19px;
+  left: 320px;
+  top: 20px;
   display: none;
   cursor: pointer;
+}
+
+#close-btn {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 0px;
+  top: 7px;
+  display: none;
 }

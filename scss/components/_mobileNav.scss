@@ -1,0 +1,26 @@
+.mobile-nav {
+  position: absolute;
+  height: 577px;
+  top: 50px;
+  background-color: $LightCream;
+  z-index: 1000;
+  display: none;
+
+  .mobile-link {
+    @include frauces24px;
+    color: $DarkGreyBlue;
+    text-decoration: none;
+  }
+}
+
+.mobile-nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-nav-btn {
+  border: 1px solid black;
+  width: 327px;
+  height: 244px;
+}

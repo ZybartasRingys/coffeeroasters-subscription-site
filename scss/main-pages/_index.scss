@@ -44,6 +44,16 @@
     @include barlow15px;
     color: $DarkGreyBlue;
   }
+
+  // coffe-heading
+
+  .coffe-heading {
+    color: linear-gradient(
+      180deg,
+      rgba(254, 252, 247, 0.0001) 0%,
+      #fefcf7 100% !important
+    );
+  }
 }
 
 // coffe images

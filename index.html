@@ -42,6 +42,30 @@
                   id="ham-btn"
                   alt="Hamburger"
                 />
+
+                <img
+                  src="/assets/shared/mobile/icon-close.svg"
+                  alt="close"
+                  id="close-btn"
+                />
+              </div>
+
+              <!-- mobile nav -->
+
+              <div class="col-12 mobile-nav pt-5">
+                <a class="mobile-link mb-4" aria-current="page" href="#"
+                  >Home</a
+                >
+                <a class="mobile-link mb-4" href="#">About us</a>
+                <a class="mobile-link" href="#">Create Your Plan</a>
+
+                <div class="row mt-5">
+                  <div
+                    class="col-11 d-flex flex-column align-items-center mobile-nav-btn"
+                  >
+                    <a href="#" class="btn main-btn pt-3">Create your plan</a>
+                  </div>
+                </div>
               </div>
             </nav>
           </div>
@@ -253,12 +277,14 @@
       <!-- how it works -->
 
       <section class="how-it-works">
-        <div class="container mt-5" style="height: 1116px">
+        <div class="container mt-5 mb-5">
           <div class="col-12 text-center mx-auto mb-5 how-heading">
             <h1>How it works</h1>
           </div>
 
-          <div class="col-12 mx-auto">
+          <div
+            class="col-12 mx-auto d-flex flex-column align-items-center justify-content-center"
+          >
             <!-- card -->
             <div class="card how-card mt-4 text-center">
               <h2>01</h2>
@@ -315,10 +341,12 @@
     <!-- footer -->
 
     <footer class="footer mb-5 mt-5">
-      <div class="container footer-container">
-        <div class="col-12 mx-auto mt-5 mb-5 pt-5 text-center">
+      <div class="container">
+        <div
+          class="col-12 mx-auto mt-5 mb-5 pt-5 footer-container text-center border"
+        >
           <div class="footer-logo">
-            <img src="/assets/shared/desktop/logo.svg" alt="Logo" />
+            <img src="/assets/shared/desktop/footer-logo.svg" alt="Logo" />
           </div>
 
           <div class="footer-navbar mt-5">
@@ -357,5 +385,7 @@
     </footer>
 
     <!-- footer end -->
+
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>
