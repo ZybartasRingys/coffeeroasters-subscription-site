@@ -1,64 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/scss/main.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  </head>
 
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
+  <body>
+    <header class="header">
+      <!-- navbar -->
 
-<body>
-  Home
-  About us
-  Create your plan
+      <div class="container mt-3">
+        <div class="row mb-4">
+          <div class="col-11 mx-auto">
+            <nav class="navbar d-flex justify-content-between navbar-expand-lg">
+              <a class="navbar-brand" href="#"
+                ><img
+                  class="logo"
+                  src="/assets/shared/desktop/logo.svg"
+                  alt="Logo"
+              /></a>
 
-  About us
-  Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of 
-  coffee from around the world. We have since been dedicated to bring the perfect cup - from 
-  bean to brew - in every shipment.
-  
-  Our commitment
-  We’re built on a simple mission and a commitment to doing good along the way. We want to 
-  make it easy for you to discover and brew the world’s best coffee at home. It all starts 
-  at the source. To locate the specific lots we want to purchase, we travel nearly 60 days 
-  a year trying to understand the challenges and opportunities in each of these places.
-  We collaborate with exceptional coffee growers and empower a global community of farmers 
-  through with well above fair-trade benchmarks. We also offer training, support farm community 
-  initiatives, and invest in coffee plant science. Curating only the finest blends, we roast 
-  each lot to highlight tasting profiles distinctive to their native growing region.
-  
-  Uncompromising quality
-  Although we work with growers who pay close attention to all stages of harvest and processing, 
-  we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the 
-  coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
-  consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+              <div class="navbar-nav d-flex flex-row justify-content-between">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+                <a class="nav-link" href="/about.html">About us</a>
+                <a class="nav-link" href="/plan.html">Create your plan</a>
+              </div>
 
-  Our headquarters
+              <!-- hamburger -->
+              <div class="hamburger">
+                <img
+                  src="/assets/shared/mobile/icon-hamburger.svg"
+                  id="ham-btn"
+                  alt="Hamburger"
+                />
 
-  United Kingdom
-  68 Asfordby Rd
-  Alcaston
-  SY6 1YA
-  +44 1241 918425
+                <img
+                  src="/assets/shared/mobile/icon-close.svg"
+                  alt="close"
+                  id="close-btn"
+                />
+              </div>
 
-  Canada
-  1528 Eglinton Avenue
-  Toronto
-  Ontario M4P 1A6
-  +1 416 485 2997
+              <!-- mobile nav -->
 
-  Australia
-  36 Swanston Street
-  Kewell
-  Victoria
-  +61 4 9928 3629
+              <div class="col-12 mobile-nav pt-5">
+                <a
+                  class="mobile-link mb-4"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+                <a class="mobile-link mb-4" href="/about.html">About us</a>
+                <a class="mobile-link" href="/plan.html">Create Your Plan</a>
 
-  Home
-  About us
-  Create your plan
-</body>
+                <div class="row mt-5">
+                  <div
+                    class="col-11 d-flex flex-column align-items-center mobile-nav-btn"
+                  >
+                    <a href="#" class="btn main-btn pt-3">Create your plan</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
 
+      <!-- navbar end -->
+
+      <!--  Hero -->
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-11 col-xxl-11 mx-auto d-flex flex-column align-items-md-start justify-content-center about-hero"
+          >
+            <div
+              class="col-11 col-md-8 col-xxl-4 about-text d-flex flex-column align-items-center align-items-md-start justify-content-center"
+            >
+              <h1 class="mt-3 text-md-start">About us</h1>
+              <p class="mt-4 text-center text-md-start">
+                Coffeeroasters began its journey of exotic discovery in 1999,
+                highlighting stories of coffee from around the world. We have
+                since been dedicated to bring the perfect cup - from bean to
+                brew - in every shipment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- hero end -->
+    </header>
+
+    <main>
+      <!-- commitment section -->
+      <section class="commitment mt-5 mb-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col col-xxl-12 mx-auto our-commitment d-flex flex-column mt-5"
+            >
+              <div class="col-11 col-md-5 col-xxl-4 our-photo mx-auto"></div>
+              <div
+                class="col-12 col-md-6 col-xxl-5 our-text mx-auto text-center text-md-start"
+              >
+                <h2 class="mt-5 text-md-center">Our commitment</h2>
+                <p class="mt-5">
+                  We’re built on a simple mission and a commitment to doing good
+                  along the way. We want to make it easy for you to discover and
+                  brew the world’s best coffee at home. It all starts at the
+                  source. To locate the specific lots we want to purchase, we
+                  travel nearly 60 days a year trying to understand the
+                  challenges and opportunities in each of these places. We
+                  collaborate with exceptional coffee growers and empower a
+                  global community of farmers through with well above fair-trade
+                  benchmarks. We also offer training, support farm community
+                  initiatives, and invest in coffee plant science. Curating only
+                  the finest blends, we roast each lot to highlight tasting
+                  profiles distinctive to their native growing region.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- commitment section end -->
+
+      <!-- quality section -->
+
+      <section class="quality mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-11 col-md-12 quality-container mx-auto">
+              <div class="col-10 col-xxl-4 quality-photo mx-auto mt-5"></div>
+              <div
+                class="col-11 col-md-12 col-xxl-6 quality-text text-center mx-auto d-flex flex-column justify-content-center"
+              >
+                <h2>Uncompromising quality</h2>
+                <p class="mt-3">
+                  Although we work with growers who pay close attention to all
+                  stages of harvest and processing, we employ, on our end, a
+                  rigorous quality control program to avoid over-roasting or
+                  baking the coffee dry. Every bag of coffee is tagged with a
+                  roast date and batch number. Our goal is to roast consistent,
+                  user-friendly coffee, so that brewing is easy and enjoyable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- quality section end -->
+
+      <!-- headquarters section -->
+      <section class="hq mt-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-11 col-xxl-12 hq-cards mx-auto d-flex flex-column justify-content-start"
+            >
+              <div class="col-11 mx-auto text-center text-md-start">
+                <h2>Our headquarters</h2>
+              </div>
+
+              <div class="col-11 col-md-12 h-cards mx-auto">
+                <!-- card  -->
+
+                <div class="col-11 col-md-4 mx-auto">
+                  <div
+                    class="card hq-card mt-5 d-flex flex-column align-items-center mx-auto"
+                  >
+                    <img
+                      class="card-img-top mt-2"
+                      src="/assets/about/desktop/illustration-uk.svg"
+                      alt="UK"
+                    />
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h5 class="card-title mb-4">United Kingdom</h5>
+                      <p class="card-text text-center">
+                        68 Asfordby Rd <br />
+                        Alcaston <br />
+                        SY6 1YA <br />
+                        +44 1241 918425
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- card end -->
+
+                <!-- card  -->
+                <div class="col-11 col-md-4 mx-auto">
+                  <div
+                    class="card hq-card mt-5 d-flex flex-column align-items-center mx-auto"
+                  >
+                    <img
+                      class="card-img-top mt-2"
+                      src="/assets/about/desktop/illustration-canada.svg"
+                      alt="CA"
+                    />
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h5 class="card-title mb-4">Canada</h5>
+                      <p class="card-text text-center">
+                        1528 Eglinton Avenue <br />
+                        Toronto <br />
+                        Ontario M4P 1A6 <br />
+                        +1 416 485 2997
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- card end -->
+
+                <!-- card  -->
+                <div class="col-11 col-md-4 mx-auto">
+                  <div
+                    class="card hq-card mt-5 d-flex flex-column align-items-center mx-auto"
+                  >
+                    <img
+                      class="card-img-top mt-2"
+                      src="/assets/about/desktop/illustration-australia.svg"
+                      alt="Au"
+                    />
+                    <div
+                      class="card-body d-flex flex-column align-items-center"
+                    >
+                      <h5 class="card-title mb-4">Australia</h5>
+                      <p class="card-text text-center">
+                        36 Swanston Street <br />
+                        Kewell <br />
+                        Victoria<br />
+                        +61 4 9928 3629
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- card end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- headquarters section end -->
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer mb-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 mx-auto mt-5 mb-5 pt-5 footer-container text-center border"
+          >
+            <div class="footer-logo">
+              <img src="/assets/shared/desktop/footer-logo.svg" alt="Logo" />
+            </div>
+
+            <div
+              class="footer-navbar d-flex flex-column flex-xxl-row align-items-center mt-5"
+            >
+              <a class="footer-link mb-4" aria-current="page" href="#">Home</a>
+              <a class="footer-link mb-4" href="#">About us</a>
+              <a class="footer-link" href="#">Create your plan</a>
+            </div>
+
+            <ul
+              class="d-flex flex-row justify-content-center mt-5 pb-5 footer-links"
+            >
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-facebook.svg"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-twitter.svg"
+                    alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-instagram.svg"
+                    alt="insta"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="/assets/js/app.js"></script>
+  </body>
 </html>

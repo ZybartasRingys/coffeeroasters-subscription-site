@@ -1,0 +1,184 @@
+/* index mobile */
+
+@include media-breakpoint-between(xs, md) {
+  //navbar
+
+  .navbar-nav {
+    display: none !important;
+  }
+
+  .logo {
+    width: 163px;
+    height: 18px;
+  }
+
+  //hero container
+
+  .hero-row {
+    height: 500px;
+  }
+
+  // why section
+
+  .hero-col {
+    height: 100%;
+    background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+  }
+
+  //testemonials
+
+  .testemonials {
+    margin-top: -650px;
+  }
+
+  //hamburger
+
+  .hamburger {
+    display: block !important;
+  }
+
+  //circles
+
+  .circles {
+    display: none;
+  }
+}
+
+/* index mobile end */
+
+/* about mobile */
+
+@include media-breakpoint-between(xs, md) {
+  // hero section
+  .about-hero {
+    height: 400px;
+    background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+
+    h1 {
+      @include frauces28px;
+      color: $LightCream;
+    }
+
+    p {
+      @include barlow15px;
+      color: $LightCream;
+      opacity: 0.8;
+    }
+  }
+
+  .about-text {
+    height: 400px;
+  }
+
+  //hero section end
+
+  // commitment section
+
+  .our-commitment {
+    height: 901px;
+
+    .our-photo {
+      height: 410px;
+      background-image: url(/assets/about/mobile/image-commitment.jpg);
+      @include backgroundIMG;
+      border-radius: 10px;
+    }
+
+    .our-text {
+      height: 453px;
+
+      h2 {
+        @include frauces28px;
+        color: $DarkGreyBlue;
+      }
+
+      p {
+        @include barlow15px;
+        color: $DarkGreyBlue;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // commitment section end
+
+  // quality section
+
+  .quality-photo {
+    position: relative;
+    height: 156px;
+    background-image: url(/assets/about/mobile/image-quality.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+    margin-bottom: -80px;
+  }
+
+  .quality-text {
+    height: 509px;
+    background-image: url(/assets/about/mobile/bg-quality.png);
+    @include backgroundIMG;
+    border-radius: 10px;
+
+    h2 {
+      @include frauces28px;
+      color: $LightCream;
+      margin-top: 102px;
+    }
+
+    p {
+      @include barlow15px;
+      color: $LightCream;
+      opacity: 0.8;
+      font-size: 16px;
+    }
+  }
+
+  // quality section end
+
+  // head quarters section
+
+  .hq {
+    .card-img-top {
+      width: 40px;
+      height: 49px;
+    }
+  }
+
+  .hq-card {
+    width: 100%;
+    height: 262px;
+  }
+
+  // head quarters section end
+}
+
+/* about mobile end */
+
+/* create plan mobile */
+
+@include media-breakpoint-between(xs, md) {
+  // plan hero
+
+  .plan-hero {
+    height: 400px;
+    background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+  }
+
+  .plan-text {
+    height: 163px;
+  }
+
+  // plan how it works
+
+  .plan-steps {
+    background-color: $FooterBackground;
+  }
+}
+
+/* create plan mobile end */

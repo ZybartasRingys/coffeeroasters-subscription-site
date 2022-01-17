@@ -1,0 +1,81 @@
+@import "..//utilities/mixins";
+
+/* create plan  */
+
+// plan-hero
+
+.plan-hero {
+  height: 400px;
+  h1 {
+    @include frauces40px;
+    color: $LightCream;
+  }
+
+  p {
+    @include barlow15px;
+    color: $LightCream;
+    opacity: 0.8;
+  }
+}
+
+// plan-hero end
+
+//steps
+.plan-steps {
+  border-radius: 10px;
+}
+
+//steps card
+
+.steps-card {
+  background-color: $FooterBackground;
+  border: none;
+  h2 {
+    @include frauces72px;
+    color: $PaleOrange;
+  }
+
+  h3 {
+    @include frauces28px;
+    color: $CardHeader;
+  }
+
+  p {
+    @include barlow15px;
+    color: $CardHeader;
+  }
+}
+
+//steps end
+
+/* order section*/
+
+.question {
+  @include frauces24px;
+  color: $Question;
+
+  &:hover {
+    color: $Question;
+  }
+}
+
+.arrow {
+  width: 19px;
+  height: 12px;
+}
+
+.sub-card {
+  background-color: $CardBackground;
+  border-radius: 8px;
+  border: none;
+  h5 {
+    @include frauces24px;
+    color: $DarkGreyBlue;
+  }
+
+  p {
+    @include barlow15px;
+    color: $DarkGreyBlue;
+  }
+}
+/* create plan  end */

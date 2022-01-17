@@ -20,8 +20,8 @@
 
       <div class="container mt-3">
         <div class="row mb-4">
-          <div class="col-12">
-            <nav class="navbar d-flex navbar-expand-lg">
+          <div class="col-11 mx-auto">
+            <nav class="navbar d-flex justify-content-between navbar-expand-lg">
               <a class="navbar-brand" href="#"
                 ><img
                   class="logo"
@@ -29,10 +29,12 @@
                   alt="Logo"
               /></a>
 
-              <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">About us</a>
-                <a class="nav-link" href="#">Create your plan</a>
+              <div class="navbar-nav d-flex flex-row justify-content-between">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+                <a class="nav-link" href="/about.html">About us</a>
+                <a class="nav-link" href="/plan.html">Create your plan</a>
               </div>
 
               <!-- hamburger -->
@@ -53,11 +55,14 @@
               <!-- mobile nav -->
 
               <div class="col-12 mobile-nav pt-5">
-                <a class="mobile-link mb-4" aria-current="page" href="#"
+                <a
+                  class="mobile-link mb-4"
+                  aria-current="page"
+                  href="/index.html"
                   >Home</a
                 >
-                <a class="mobile-link mb-4" href="#">About us</a>
-                <a class="mobile-link" href="#">Create Your Plan</a>
+                <a class="mobile-link mb-4" href="/about.html">About us</a>
+                <a class="mobile-link" href="/plan.html">Create Your Plan</a>
 
                 <div class="row mt-5">
                   <div
@@ -74,18 +79,36 @@
 
       <!-- navbar end -->
 
+      <!-- hero -->
+
       <div class="container mb-5">
         <div class="row hero-row">
           <div
             class="col-11 mx-auto text-center d-flex flex-column justify-content-center align-items-center hero-col"
           >
-            <h1>Great coffee made simple.</h1>
-            <p>
-              Start your mornings with the world’s best coffees. Try our
-              expertly curated artisan coffees from our best roasters delivered
-              directly to your door, at your schedule.
-            </p>
-            <a href="#" class="btn main-btn pt-3">Create your plan</a>
+            <div
+              class="row hero-text d-flex flex-column align-items-center align-items-xxl-start"
+            >
+              <div
+                class="col-12 col-md-7 col-xl-4 col-xxl-6 text-lg-start text-md-start"
+              >
+                <h1>Great coffee made simple.</h1>
+              </div>
+
+              <div
+                class="col-11 col-md-8 col-xl-4 col-xxl-5 mt-2 text-lg-start text-md-start"
+              >
+                <p>
+                  Start your mornings with the world’s best coffees. Try our
+                  expertly curated artisan coffees from our best roasters
+                  delivered directly to your door, at your schedule.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-8 col-xl-4 text-lg-start text-md-start">
+                <a href="#" class="btn main-btn pt-3">Create your plan</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,15 +125,18 @@
           <div class="row">
             <div class="col-md-12 mb-5 text-center">
               <div class="coffe-heading mt-5">
-                <h2 class="collection">Our collection</h2>
+                <h2 class="our-collection">our collection</h2>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-11 mx-auto text-center">
+          <div class="row coffe-row mx-auto">
+            <div class="col-11 col-md-9 col-xl-3 col-xxl-3 mx-auto text-center">
               <!-- Card -->
-              <div class="card d-flex align-items-center" style="border: none">
+              <div
+                class="card coffe-card d-flex align-items-center"
+                style="border: none"
+              >
                 <img
                   src="/assets/home/desktop/image-gran-espresso.png"
                   alt="Espresso"
@@ -127,9 +153,12 @@
               </div>
               <!-- Card  end-->
             </div>
-            <div class="col-11 mx-auto">
+            <div class="col-11 col-md-9 col-xl-3 col-xxl-3 mx-auto">
               <!-- Card -->
-              <div class="card d-flex align-items-center" style="border: none">
+              <div
+                class="card coffe-card d-flex align-items-center"
+                style="border: none"
+              >
                 <img
                   src="/assets/home/desktop/image-planalto.png"
                   alt="planalto"
@@ -146,9 +175,12 @@
               </div>
               <!-- Card  end-->
             </div>
-            <div class="col-11 mx-auto">
+            <div class="col-11 col-md-9 col-xl-3 col-xxl-3 mx-auto">
               <!-- Card -->
-              <div class="card d-flex align-items-center" style="border: none">
+              <div
+                class="card coffe-card d-flex align-items-center"
+                style="border: none"
+              >
                 <img
                   src="/assets/home/desktop/image-piccollo.png"
                   alt="Piccollo"
@@ -164,9 +196,12 @@
               </div>
               <!-- Card  end-->
             </div>
-            <div class="col-11 mx-auto">
+            <div class="col-11 col-md-9 col-xl-3 col-xxl-3 mx-auto">
               <!-- Card -->
-              <div class="card d-flex align-items-center" style="border: none">
+              <div
+                class="card coffe-card d-flex align-items-center"
+                style="border: none"
+              >
                 <img
                   src="/assets/home/desktop/image-danche.png"
                   alt="Danche"
@@ -192,7 +227,7 @@
       <section class="why">
         <div class="container mt-5 mb-5">
           <div class="row d-flex flex-column">
-            <div class="col-11 why-container mx-auto mt-5">
+            <div class="col-11 col-xl-12 why-container mx-auto mt-5">
               <div class="why-text text-center mt-5">
                 <h1>Why choose us?</h1>
                 <p class="mt-4">
@@ -206,7 +241,7 @@
           </div>
 
           <div class="row testemonials d-flex flex-column">
-            <div class="col-10 mx-auto">
+            <div class="col-10 col-xl-3 mx-auto">
               <!-- card  -->
               <div
                 class="card testemonials-card mt-4 text-center d-flex flex-column align-items-center"
@@ -227,7 +262,7 @@
               </div>
               <!-- card end -->
             </div>
-            <div class="col-10 mx-auto">
+            <div class="col-10 col-xl-3 mx-auto">
               <!-- card  -->
               <div
                 class="card testemonials-card mt-4 text-center d-flex flex-column align-items-center"
@@ -240,7 +275,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">Exclusive benefits</h5>
-                  <p class="card-text mt-3">
+                  <p class="card-text mt-4">
                     Special offers and swag when you subscribe, including 30%
                     off your first shipment.
                   </p>
@@ -248,7 +283,7 @@
               </div>
               <!-- card end -->
             </div>
-            <div class="col-10 mx-auto">
+            <div class="col-10 col-xl-3 mx-auto">
               <!-- card  -->
               <div
                 class="card testemonials-card mt-4 text-center d-flex flex-column align-items-center"
@@ -277,58 +312,78 @@
       <!-- how it works -->
 
       <section class="how-it-works">
-        <div class="container mt-5 mb-5">
-          <div class="col-12 text-center mx-auto mb-5 how-heading">
-            <h1>How it works</h1>
+        <div class="container d-flex flex-column align-items-center mt-5 mb-5">
+          <div class="row">
+            <div class="col-12 text-center mx-auto mb-5 how-heading">
+              <h1>How it works</h1>
+            </div>
           </div>
 
-          <div
-            class="col-12 mx-auto d-flex flex-column align-items-center justify-content-center"
-          >
-            <!-- card -->
-            <div class="card how-card mt-4 text-center">
-              <h2>01</h2>
-              <div class="card-body">
-                <h3 class="card-title mb-4">Pick your coffee</h3>
-                <p class="card-text mb-4 text-center">
-                  Select from our evolving range of artisan coffees. Our beans
-                  are ethically sourced and we pay fair prices for them. There
-                  are new coffees in all profiles every month for you to try
-                  out.
-                </p>
+          <div class="row circles">
+            <div class="col-9 col-md-12 border d-flex justify-content-between">
+              <div class="circle">
+                <div class="circle-line"></div>
               </div>
+              <div class="circle"></div>
+              <div class="circle"></div>
             </div>
-            <!-- card end -->
-            <!-- card -->
-            <div class="card how-card mt-4 text-center">
-              <h2>02</h2>
-              <div class="card-body">
-                <h3 class="card-title mb-4">Choose the frequency</h3>
-                <p class="card-text mb-4">
-                  Customize your order frequency, quantity, even your roast
-                  style and grind type. Pause, skip or cancel your subscription
-                  with no commitment through our online portal.
-                </p>
-              </div>
-            </div>
-            <!-- card end -->
-            <!-- card -->
-            <div class="card how-card mb-5 mt-4 text-center">
-              <h2>03</h2>
-              <div class="card-body">
-                <h3 class="card-title mb-4">Receive and enjoy!</h3>
-                <p class="card-text mb-4">
-                  We ship your package within 48 hours, freshly roasted. Sit
-                  back and enjoy award-winning world-class coffees curated to
-                  provide a distinct tasting experience.
-                </p>
-              </div>
-            </div>
-            <!-- card end -->
+          </div>
 
-            <a href="#" class="btn main-btn pt-3 text-center"
-              >Create your plan</a
+          <div class="row how-container d-flex flex-column">
+            <div class="col col-md-4 col-4-xl">
+              <!-- card -->
+              <div class="card how-card mt-4 text-center">
+                <h2>01</h2>
+                <div class="card-body">
+                  <h3 class="card-title mb-4">Pick your coffee</h3>
+                  <p class="card-text mb-4 text-center">
+                    Select from our evolving range of artisan coffees. Our beans
+                    are ethically sourced and we pay fair prices for them. There
+                    are new coffees in all profiles every month for you to try
+                    out.
+                  </p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col col-md-4 col-4-xl">
+              <!-- card -->
+              <div class="card how-card mt-4 text-center">
+                <h2>02</h2>
+                <div class="card-body">
+                  <h3 class="card-title mb-4">Choose the frequency</h3>
+                  <p class="card-text mb-4">
+                    Customize your order frequency, quantity, even your roast
+                    style and grind type. Pause, skip or cancel your
+                    subscription with no commitment through our online portal.
+                  </p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+            <div class="col col-md-4 col-4-xl">
+              <!-- card -->
+              <div class="card how-card mb-5 mt-4 text-center">
+                <h2>03</h2>
+                <div class="card-body">
+                  <h3 class="card-title mb-4">Receive and enjoy!</h3>
+                  <p class="card-text mb-4">
+                    We ship your package within 48 hours, freshly roasted. Sit
+                    back and enjoy award-winning world-class coffees curated to
+                    provide a distinct tasting experience.
+                  </p>
+                </div>
+              </div>
+              <!-- card end -->
+            </div>
+
+            <div
+              class="col d-flex justify-content-center justify-content-md-start"
             >
+              <a href="#" class="btn main-btn pt-3 text-center"
+                >Create your plan</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -342,44 +397,48 @@
 
     <footer class="footer mb-5 mt-5">
       <div class="container">
-        <div
-          class="col-12 mx-auto mt-5 mb-5 pt-5 footer-container text-center border"
-        >
-          <div class="footer-logo">
-            <img src="/assets/shared/desktop/footer-logo.svg" alt="Logo" />
-          </div>
-
-          <div class="footer-navbar mt-5">
-            <a class="nav-link mb-2" aria-current="page" href="#">Home</a>
-            <a class="nav-link mb-2" href="#">About us</a>
-            <a class="nav-link" href="#">Create your plan</a>
-          </div>
-
-          <ul
-            class="d-flex flex-row justify-content-center mt-5 pb-5 footer-links"
+        <div class="row">
+          <div
+            class="col-12 mx-auto mt-5 mb-5 pt-5 footer-container text-center border"
           >
-            <li>
-              <a href="#"
-                ><img
-                  src="/assets/shared/desktop/icon-facebook.svg"
-                  alt="facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/assets/shared/desktop/icon-twitter.svg"
-                  alt="twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="/assets/shared/desktop/icon-instagram.svg"
-                  alt="insta"
-              /></a>
-            </li>
-          </ul>
+            <div class="footer-logo">
+              <img src="/assets/shared/desktop/footer-logo.svg" alt="Logo" />
+            </div>
+
+            <div
+              class="footer-navbar d-flex flex-column flex-xxl-row align-items-center mt-5"
+            >
+              <a class="footer-link mb-4" aria-current="page" href="#">Home</a>
+              <a class="footer-link mb-4" href="#">About us</a>
+              <a class="footer-link" href="#">Create your plan</a>
+            </div>
+
+            <ul
+              class="d-flex flex-row justify-content-center mt-5 pb-5 footer-links"
+            >
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-facebook.svg"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-twitter.svg"
+                    alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="/assets/shared/desktop/icon-instagram.svg"
+                    alt="insta"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

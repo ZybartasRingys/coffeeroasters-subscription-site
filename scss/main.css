@@ -11979,6 +11979,7 @@ fieldset:disabled .btn {
   line-height: 32px;
   color: #fefcf7;
   margin-bottom: 20px;
+  line-height: 40px !important;
 }
 
 .hero-col p {
@@ -12018,8 +12019,17 @@ fieldset:disabled .btn {
   color: #333d4b;
 }
 
-.collection .coffe-heading {
-  color: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #fefcf7 100% !important);
+.collection .our-collection {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 32px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#979797), to(#fff));
+  background: linear-gradient(#979797 0%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .coffe {
@@ -12121,9 +12131,231 @@ fieldset:disabled .btn {
   color: #333d4b;
 }
 
-@media (max-width: 575.98px) {
+.circle {
+  height: 31px;
+  width: 31px;
+  background: #fefcf7;
+  border: 2px solid #0e8784;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.about-hero {
+  border-radius: 10px;
+}
+
+.about-hero h1, .about-hero .h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #fefcf7;
+}
+
+.about-hero p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
+.our-text {
+  height: 453px;
+}
+
+.our-text h2, .our-text .h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.our-text p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
+  opacity: 0.8;
+}
+
+.quality-container {
+  background-image: url(/assets/about/desktop/bg-quality.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.quality-text h2, .quality-text .h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #fefcf7;
+  margin-top: 102px;
+}
+
+.quality-text p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.hq-cards h2, .hq-cards .h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.hq-card {
+  border: none;
+  background-color: #fefcf7;
+}
+
+.hq-card h5, .hq-card .h5 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.hq-card p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
+}
+
+/* create plan  */
+.plan-hero {
+  height: 400px;
+}
+
+.plan-hero h1, .plan-hero .h1 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 32px;
+  color: #fefcf7;
+}
+
+.plan-hero p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+
+.plan-steps {
+  border-radius: 10px;
+}
+
+.steps-card {
+  background-color: #2c343e;
+  border: none;
+}
+
+.steps-card h2, .steps-card .h2 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+
+.steps-card h3, .steps-card .h3 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.steps-card p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+/* order section*/
+.question {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+
+.question:hover {
+  color: #83888f;
+}
+
+.arrow {
+  width: 19px;
+  height: 12px;
+}
+
+.sub-card {
+  background-color: #f4f1eb;
+  border-radius: 8px;
+  border: none;
+}
+
+.sub-card h5, .sub-card .h5 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+
+.sub-card p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
+}
+
+/* create plan  end */
+/* index mobile */
+@media (max-width: 767.98px) {
   .navbar-nav {
-    display: none;
+    display: none !important;
   }
   .logo {
     width: 163px;
@@ -12146,6 +12378,454 @@ fieldset:disabled .btn {
   .hamburger {
     display: block !important;
   }
+  .circles {
+    display: none;
+  }
+}
+
+/* index mobile end */
+/* about mobile */
+@media (max-width: 767.98px) {
+  .about-hero {
+    height: 400px;
+    background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .about-hero h1, .about-hero .h1 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fefcf7;
+  }
+  .about-hero p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fefcf7;
+    opacity: 0.8;
+  }
+  .about-text {
+    height: 400px;
+  }
+  .our-commitment {
+    height: 901px;
+  }
+  .our-commitment .our-photo {
+    height: 410px;
+    background-image: url(/assets/about/mobile/image-commitment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .our-commitment .our-text {
+    height: 453px;
+  }
+  .our-commitment .our-text h2, .our-commitment .our-text .h2 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    color: #333d4b;
+  }
+  .our-commitment .our-text p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #333d4b;
+    opacity: 0.8;
+  }
+  .quality-photo {
+    position: relative;
+    height: 156px;
+    background-image: url(/assets/about/mobile/image-quality.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: -80px;
+  }
+  .quality-text {
+    height: 509px;
+    background-image: url(/assets/about/mobile/bg-quality.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .quality-text h2, .quality-text .h2 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fefcf7;
+    margin-top: 102px;
+  }
+  .quality-text p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fefcf7;
+    opacity: 0.8;
+    font-size: 16px;
+  }
+  .hq .card-img-top {
+    width: 40px;
+    height: 49px;
+  }
+  .hq-card {
+    width: 100%;
+    height: 262px;
+  }
+}
+
+/* about mobile end */
+/* create plan mobile */
+@media (max-width: 767.98px) {
+  .plan-hero {
+    height: 400px;
+    background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .plan-text {
+    height: 163px;
+  }
+  .plan-steps {
+    background-color: #2c343e;
+  }
+}
+
+/* create plan mobile end */
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .hero-row {
+    height: 500px;
+  }
+  .hero-col {
+    height: 500px;
+    background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-text {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    margin-left: 30px;
+  }
+  .our-collection {
+    font-size: 72px !important;
+    height: 150px;
+    padding-top: 20px;
+  }
+  .coffe-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .coffe-card .card-body {
+    text-align: left !important;
+  }
+  .why-container {
+    height: 573px !important;
+  }
+  .why-text {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .testemonials {
+    margin-top: -330px;
+  }
+  .testemonials-card {
+    height: 180px !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .testemonials-card .card-img-top {
+    width: 56px;
+    height: 56px;
+    margin-left: 70px;
+    margin-right: 54px;
+  }
+  .testemonials-card .card-body {
+    text-align: left !important;
+  }
+  .how-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .how-heading {
+    text-align: left !important;
+  }
+  .how-card {
+    text-align: left !important;
+  }
+  .card-text {
+    text-align: left !important;
+  }
+  .footer-navbar {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-navbar .footer-link {
+    margin-left: 30px;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .about-hero {
+    height: 400px;
+    background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .about-text {
+    margin-left: 40px;
+    padding-right: 10px;
+  }
+  .our-commitment {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .our-photo {
+    height: 470px;
+    background-image: url(/assets/about/tablet/image-commitment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .our-text h2, .our-text .h2 {
+    margin: 17px !important;
+  }
+  .quality-container {
+    height: 488px;
+    margin-top: 240px;
+    background-image: url(/assets/about/tablet/bg-quality.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .quality-photo {
+    position: relative;
+    height: 320px;
+    background-image: url(/assets/about/tablet/image-quality.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: -160px !important;
+  }
+  .quality-text {
+    height: 197px;
+    padding: 0 67px;
+    margin-top: 20px;
+  }
+  .quality-text h2, .quality-text .h2 {
+    margin-bottom: 20px;
+  }
+  .hq-cards {
+    height: 366px;
+    margin-left: 0 !important;
+  }
+  .hq-cards h5, .hq-cards .h5 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333d4b;
+  }
+  .h-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-body {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-text {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .hero-text h1, .hero-text .h1 {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    line-height: 72px !important;
+  }
+  .hero-text p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .why-container {
+    height: 573px !important;
+  }
+  .why-container .why-text {
+    width: 540px;
+    height: 160px;
+    margin: auto;
+  }
+  .why-container .why-text p {
+    font-size: 16px;
+  }
+  .testemonials {
+    margin-top: -330px;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .how-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .footer-container {
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0 !important;
+  }
+  .footer-links {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-hero {
+    height: 450px;
+    background-image: url(/assets/about/desktop/image-hero-whitecup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .about-text {
+    margin-left: 84px;
+  }
+  .our-commitment {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .our-photo {
+    height: 520px;
+    background-image: url(/assets/about/desktop/image-commitment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .our-text h2, .our-text .h2 {
+    margin: 17px !important;
+  }
+  .quality-container {
+    height: 474px;
+    background-image: url(/assets/about/desktop/bg-quality.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .quality-photo {
+    position: relative;
+    margin-top: -90px !important;
+    height: 474px;
+    background-image: url(/assets/about/desktop/image-quality.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .quality-text {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    text-align: start !important;
+  }
+  .quality-text h2, .quality-text .h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .h-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+
+.nav-link {
+  margin-left: 33px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: #83888f;
+  text-transform: uppercase;
 }
 
 .main-btn {
@@ -12169,7 +12849,7 @@ fieldset:disabled .btn {
   position: absolute;
   width: 16px;
   height: 15px;
-  left: 320px;
+  left: 315px;
   top: 20px;
   display: none;
   cursor: pointer;
@@ -12180,7 +12860,7 @@ fieldset:disabled .btn {
   width: 16px;
   height: 15px;
   left: 0px;
-  top: 7px;
+  top: 0px;
   display: none;
 }
 
@@ -12201,6 +12881,10 @@ fieldset:disabled .btn {
 .footer-links li {
   list-style: none;
   margin-right: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
 }
 
 .mobile-nav {

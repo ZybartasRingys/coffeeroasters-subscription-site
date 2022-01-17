@@ -16,6 +16,7 @@
     @include frauces40px;
     color: $LightCream;
     margin-bottom: 20px;
+    line-height: 40px !important;
   }
 
   p {
@@ -45,15 +46,33 @@
     color: $DarkGreyBlue;
   }
 
-  // coffe-heading
-
-  .coffe-heading {
-    color: linear-gradient(
-      180deg,
-      rgba(254, 252, 247, 0.0001) 0%,
-      #fefcf7 100% !important
-    );
+  .our-collection {
+    @include frauces40px;
+    background: linear-gradient(#979797 0%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+
+  // .our-collection::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   left: 0;
+  //   background-image: -webkit-gradient(
+  //     linear,
+  //     left top,
+  //     left bottom,
+  //     from(rgba(254, 252, 247, 0.0001)),
+  //     to(#fefcf7)
+  //   );
+  //   background-image: linear-gradient(
+  //     rgba(254, 252, 247, 0.0001) 0%,
+  //     #fefcf7 100%
+  //   );
+  // }
 }
 
 // coffe images
@@ -140,3 +159,19 @@
   }
 }
 // how it works end
+
+// circles
+
+.circle {
+  height: 31px;
+  width: 31px;
+  background: #fefcf7;
+  border: 2px solid #0e8784;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+// .circle-line {
+//   width: 50px;
+//   height: 2px;
+// }

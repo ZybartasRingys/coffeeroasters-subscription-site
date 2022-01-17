@@ -1,0 +1,79 @@
+@import "..//utilities/mixins";
+
+// Hero
+
+.about-hero {
+  border-radius: 10px;
+  h1 {
+    @include frauces28px;
+    color: $LightCream;
+  }
+
+  p {
+    @include barlow15px;
+    color: $LightCream;
+    opacity: 0.8;
+  }
+}
+
+.our-text {
+  height: 453px;
+
+  h2 {
+    @include frauces28px;
+    color: $DarkGreyBlue;
+  }
+
+  p {
+    @include barlow15px;
+    color: $DarkGreyBlue;
+    opacity: 0.8;
+  }
+}
+
+// hero end
+
+// quality
+
+.quality-container {
+  background-image: url(/assets/about/desktop/bg-quality.png);
+  @include backgroundIMG;
+  border-radius: 10px;
+}
+
+.quality-text {
+  h2 {
+    @include frauces28px;
+    color: $LightCream;
+    margin-top: 102px;
+  }
+
+  p {
+    @include barlow15px;
+    color: $LightCream;
+    opacity: 0.8;
+    font-size: 16px;
+  }
+}
+
+.hq-cards {
+  h2 {
+    @include frauces24px;
+    color: $Grey;
+  }
+}
+
+.hq-card {
+  border: none;
+  background-color: $LightCream;
+
+  h5 {
+    @include frauces28px;
+    color: $DarkGreyBlue;
+  }
+
+  p {
+    @include barlow15px;
+    color: $DarkGreyBlue;
+  }
+}

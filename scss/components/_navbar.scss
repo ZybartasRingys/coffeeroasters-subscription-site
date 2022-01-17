@@ -1,0 +1,6 @@
+.nav-link {
+  margin-left: 33px;
+  @include barlow12px;
+  color: $Grey;
+  text-transform: uppercase;
+}

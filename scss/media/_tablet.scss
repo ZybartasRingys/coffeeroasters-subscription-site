@@ -1,0 +1,190 @@
+@include media-breakpoint-between(md, xxl) {
+  //hero container
+
+  .hero-row {
+    height: 500px;
+  }
+  .hero-col {
+    height: 500px;
+    background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+    @include backgroundIMG;
+  }
+
+  .hero-text {
+    align-items: flex-start !important;
+    margin-left: 30px;
+  }
+
+  // collection section
+
+  .our-collection {
+    font-size: 72px !important;
+    height: 150px;
+    padding-top: 20px;
+  }
+
+  // .coffe-row {
+  //   margin-top: -150px;
+  // }
+
+  .coffe-card {
+    flex-direction: row;
+
+    .card-body {
+      text-align: left !important;
+    }
+  }
+
+  // why section
+
+  .why-container {
+    height: 573px !important;
+  }
+
+  .why-text {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  //testemonials cards
+
+  .testemonials {
+    margin-top: -330px;
+  }
+
+  .testemonials-card {
+    height: 180px !important;
+    flex-direction: row !important;
+
+    .card-img-top {
+      width: 56px;
+      height: 56px;
+      margin-left: 70px;
+      margin-right: 54px;
+    }
+
+    .card-body {
+      text-align: left !important;
+    }
+  }
+
+  // how it works
+
+  .how-container {
+    flex-direction: row !important;
+  }
+
+  .how-heading {
+    text-align: left !important;
+  }
+
+  .how-card {
+    text-align: left !important;
+  }
+  .card-text {
+    text-align: left !important;
+  }
+
+  //footer
+
+  .footer-navbar {
+    flex-direction: row !important;
+    justify-content: center;
+
+    .footer-link {
+      margin-left: 30px;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+// about us teblet
+
+@include media-breakpoint-between(md, xxl) {
+  //hero
+  .about-hero {
+    height: 400px;
+    background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
+    @include backgroundIMG;
+  }
+
+  .about-text {
+    margin-left: 40px;
+    padding-right: 10px;
+  }
+
+  //commitment
+
+  .our-commitment {
+    flex-direction: row !important;
+  }
+
+  .our-photo {
+    height: 470px;
+    background-image: url(/assets/about/tablet/image-commitment.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+  }
+
+  .our-text {
+    h2 {
+      margin: 17px !important;
+    }
+  }
+
+  //quality
+
+  .quality-container {
+    height: 488px;
+    margin-top: 240px;
+    background-image: url(/assets/about/tablet/bg-quality.png);
+    @include backgroundIMG;
+    border-radius: 10px;
+  }
+
+  .quality-photo {
+    position: relative;
+    height: 320px;
+    background-image: url(/assets/about/tablet/image-quality.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+    margin-top: -160px !important;
+  }
+
+  .quality-text {
+    height: 197px;
+    padding: 0 67px;
+    margin-top: 20px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  // headquarters
+
+  .hq-cards {
+    height: 366px;
+    margin-left: 0 !important;
+
+    h5 {
+      @include frauces24px;
+      color: $DarkGreyBlue;
+    }
+  }
+
+  .h-cards {
+    display: flex;
+  }
+
+  // .hq {
+  //   .card-img-top {
+  //     width: 40px;
+  //     height: 49px;
+  //   }
+  // }
+
+  .card-body {
+    padding: 0;
+  }
+}

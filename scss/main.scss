@@ -7,12 +7,18 @@
 
 // main pages
 @import "..//scss/main-pages/index";
+@import "..//scss/main-pages/about";
+@import "..//scss/main-pages/plan";
 
 //media queries
-@import "..//scss/media/mobile@768px";
+@import "..//scss/media/mobile";
+@import "..//scss/media/tablet";
+@import "../scss/media/desktop";
 
 //components
+@import "..//scss/components/navbar";
 @import "..//scss/components/buttons";
+
 @import "..//scss/components/hamburger";
 @import "..//scss/components/footer";
 @import "..//scss/components/mobileNav";
