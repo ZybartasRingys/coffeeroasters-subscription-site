@@ -23,6 +23,7 @@
 //steps
 .plan-steps {
   border-radius: 10px;
+  background-color: $FooterBackground;
 }
 
 //steps card
@@ -76,6 +77,34 @@
   p {
     @include barlow15px;
     color: $DarkGreyBlue;
+  }
+}
+
+// summary text
+
+.summary-text {
+  background-color: $FooterBackground;
+  border-radius: 10px;
+
+  h5 {
+    @include barlow15px;
+    color: $CardHeader;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  p {
+    @include frauces24px;
+    color: $CardHeader;
+  }
+
+  span {
+    @include frauces24px;
+    color: $Darkcyan;
+  }
+
+  .summary-btn {
+    height: 56px;
   }
 }
 /* create plan  end */

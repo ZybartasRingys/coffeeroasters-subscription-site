@@ -188,3 +188,41 @@
     padding: 0;
   }
 }
+
+// plan tablet
+
+@include media-breakpoint-between(md, xxl) {
+  //plan hero
+
+  .plan-hero {
+    height: 400px;
+    background-image: url(/assets/plan/tablet/image-hero-blackcup.jpg);
+    @include backgroundIMG;
+    border-radius: 10px;
+  }
+
+  // steps
+
+  .plan-steps {
+    height: 640px;
+    // background-color: $FooterBackground;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  // order
+
+  .list {
+    display: none;
+  }
+
+  // order summary
+
+  .order-summary {
+    height: 304px;
+  }
+
+  .summary-text {
+    height: 208px !important;
+  }
+}

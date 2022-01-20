@@ -12274,6 +12274,7 @@ fieldset:disabled .btn {
 
 .plan-steps {
   border-radius: 10px;
+  background-color: #2c343e;
 }
 
 .steps-card {
@@ -12349,6 +12350,44 @@ fieldset:disabled .btn {
   font-size: 15px;
   line-height: 25px;
   color: #333d4b;
+}
+
+.summary-text {
+  background-color: #2c343e;
+  border-radius: 10px;
+}
+
+.summary-text h5, .summary-text .h5 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.summary-text p {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.summary-text span {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0e8784;
+}
+
+.summary-text .summary-btn {
+  height: 56px;
 }
 
 /* create plan  end */
@@ -12508,6 +12547,44 @@ fieldset:disabled .btn {
   }
   .plan-steps {
     background-color: #2c343e;
+  }
+  .list {
+    display: none;
+  }
+  .order-summary {
+    height: 450px;
+    border-radius: 10px;
+  }
+  .order-summary .summary-text {
+    height: 338px;
+    background-color: #2c343e;
+    border-radius: 10px;
+  }
+  .order-summary h5, .order-summary .h5 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  .order-summary p {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  .order-summary span {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0e8784;
   }
 }
 
@@ -12677,6 +12754,36 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .plan-hero {
+    height: 400px;
+    background-image: url(/assets/plan/tablet/image-hero-blackcup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .plan-steps {
+    height: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .list {
+    display: none;
+  }
+  .order-summary {
+    height: 304px;
+  }
+  .summary-text {
+    height: 208px !important;
+  }
+}
+
 @media (min-width: 1400px) {
   .hero-text {
     text-align: left;
@@ -12817,6 +12924,29 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 1400px) {
+  .plan-hero {
+    height: 450px;
+    background-image: url(/assets/plan/desktop/image-hero-blackcup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .plan-text {
+    padding-left: 40px;
+  }
+  .plan-steps {
+    height: 653px;
+    border-radius: 0;
+  }
+  .steps-line {
+    height: 453px !important;
+  }
+  .steps-card {
+    height: 355px;
+  }
+}
+
 .nav-link {
   margin-left: 33px;
   font-family: "Barlow";
@@ -12839,6 +12969,8 @@ fieldset:disabled .btn {
   font-size: 18px;
   line-height: 25px;
   color: #fefcf7;
+  border: none;
+  border-radius: 6px;
 }
 
 .main-btn:hover {

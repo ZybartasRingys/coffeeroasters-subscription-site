@@ -179,6 +179,44 @@
   .plan-steps {
     background-color: $FooterBackground;
   }
+
+  // order
+
+  //list
+
+  .list {
+    display: none;
+  }
+
+  //order summary
+
+  .order-summary {
+    height: 450px;
+    border-radius: 10px;
+
+    .summary-text {
+      height: 338px;
+      background-color: $FooterBackground;
+      border-radius: 10px;
+    }
+
+    h5 {
+      @include barlow15px;
+      color: $CardHeader;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+
+    p {
+      @include frauces24px;
+      color: $CardHeader;
+    }
+
+    span {
+      @include frauces24px;
+      color: $Darkcyan;
+    }
+  }
 }
 
 /* create plan mobile end */

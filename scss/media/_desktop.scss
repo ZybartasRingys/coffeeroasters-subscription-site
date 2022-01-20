@@ -135,3 +135,32 @@
     justify-content: flex-start !important;
   }
 }
+
+// plan desktop
+
+@include media-breakpoint-up(xxl) {
+  .plan-hero {
+    height: 450px;
+    background-image: url(/assets/plan/desktop/image-hero-blackcup.jpg);
+    @include backgroundIMG;
+  }
+
+  .plan-text {
+    padding-left: 40px;
+  }
+
+  // steps
+
+  .plan-steps {
+    height: 653px;
+    border-radius: 0;
+  }
+
+  .steps-line {
+    height: 453px !important;
+  }
+
+  .steps-card {
+    height: 355px;
+  }
+}
