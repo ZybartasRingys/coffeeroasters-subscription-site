@@ -11958,6 +11958,7 @@ fieldset:disabled .btn {
   }
 }
 
+/* Hero*/
 .hero-row {
   height: 600px;
 }
@@ -11993,6 +11994,8 @@ fieldset:disabled .btn {
   margin-bottom: 40px;
 }
 
+/* Hero end*/
+/* Collection section*/
 .collection {
   background: #fefcf7;
 }
@@ -12020,13 +12023,19 @@ fieldset:disabled .btn {
 }
 
 .collection .our-collection {
+  height: 72px;
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   line-height: 32px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#979797), to(#fff));
-  background: linear-gradient(#979797 0%, #fff 100%);
+  font-size: 130px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+  text-align: center;
+  background-color: #83888f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83888f), color-stop(80%, #fefcf7));
+  background-image: linear-gradient(180deg, #83888f 0%, #fefcf7 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -12037,6 +12046,12 @@ fieldset:disabled .btn {
   height: 151px;
 }
 
+.coffe-card {
+  background: RGBA(254, 252, 247, 0) !important;
+}
+
+/* Collection section end*/
+/* Why section*/
 .why-container {
   height: 902px;
   background-color: #2c343e;
@@ -12090,6 +12105,8 @@ fieldset:disabled .btn {
   height: 72px;
 }
 
+/* Why section end*/
+/* How it works section */
 .how-heading {
   font-family: "Fraunces";
   font-style: normal;
@@ -12131,16 +12148,7 @@ fieldset:disabled .btn {
   color: #333d4b;
 }
 
-.circle {
-  height: 31px;
-  width: 31px;
-  background: #fefcf7;
-  border: 2px solid #0e8784;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-}
-
+/* How it works section end*/
 .about-hero {
   border-radius: 10px;
 }
@@ -12202,7 +12210,6 @@ fieldset:disabled .btn {
   font-size: 28px;
   line-height: 32px;
   color: #fefcf7;
-  margin-top: 102px;
 }
 
 .quality-text p {
@@ -12248,9 +12255,10 @@ fieldset:disabled .btn {
   color: #333d4b;
 }
 
-/* create plan  */
+/*  plan  */
 .plan-hero {
   height: 400px;
+  border-radius: 10px;
 }
 
 .plan-hero h1, .plan-hero .h1 {
@@ -12272,6 +12280,11 @@ fieldset:disabled .btn {
   opacity: 0.8;
 }
 
+.plan-text {
+  height: 182px;
+}
+
+/* steps  section*/
 .plan-steps {
   border-radius: 10px;
   background-color: #2c343e;
@@ -12309,7 +12322,18 @@ fieldset:disabled .btn {
   color: #ffffff;
 }
 
+/* steps  section end*/
 /* order section*/
+.list-item {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+  opacity: 0.4;
+}
+
 .question {
   font-family: "Fraunces";
   font-style: normal;
@@ -12390,6 +12414,7 @@ fieldset:disabled .btn {
   height: 56px;
 }
 
+/* order section end*/
 /* create plan  end */
 /* index mobile */
 @media (max-width: 767.98px) {
@@ -12400,9 +12425,10 @@ fieldset:disabled .btn {
     width: 163px;
     height: 18px;
   }
-  .hero-row {
-    height: 500px;
+  .hamburger {
+    display: block !important;
   }
+  /* hero section */
   .hero-col {
     height: 100%;
     background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
@@ -12411,20 +12437,40 @@ fieldset:disabled .btn {
     background-position: center;
     border-radius: 10px;
   }
+  .hero-row {
+    height: 500px;
+  }
+  .about-text {
+    padding: 10px;
+  }
+  /* hero section end*/
+  /* collection section*/
+  .coffe-heading {
+    height: 72px;
+  }
+  .coffe-heading .our-collection {
+    font-size: 40px;
+  }
+  /* collection section end*/
+  /* why section*/
+  .why {
+    margin-bottom: 125px;
+  }
   .testemonials {
     margin-top: -650px;
   }
-  .hamburger {
-    display: block !important;
-  }
+  /* why section end*/
+  /* how it works*/
   .circles {
     display: none;
   }
+  /* how it works end*/
 }
 
 /* index mobile end */
 /* about mobile */
 @media (max-width: 767.98px) {
+  /* hero section */
   .about-hero {
     height: 400px;
     background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
@@ -12452,6 +12498,11 @@ fieldset:disabled .btn {
   }
   .about-text {
     height: 400px;
+  }
+  /* hero section end */
+  /* commitment section */
+  .commitment {
+    margin-bottom: 201px !important;
   }
   .our-commitment {
     height: 901px;
@@ -12484,6 +12535,11 @@ fieldset:disabled .btn {
     color: #333d4b;
     opacity: 0.8;
   }
+  /* commitment section end */
+  /* quality section*/
+  .quality-container {
+    height: 508px;
+  }
   .quality-photo {
     position: relative;
     height: 156px;
@@ -12492,34 +12548,16 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    margin-bottom: -80px;
+    margin-top: -80px;
   }
   .quality-text {
-    height: 509px;
-    background-image: url(/assets/about/mobile/bg-quality.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
+    height: 306px;
+    margin-top: 65px;
   }
-  .quality-text h2, .quality-text .h2 {
-    font-family: "Fraunces";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 32px;
-    color: #fefcf7;
-    margin-top: 102px;
-  }
-  .quality-text p {
-    font-family: "Barlow";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 25px;
-    color: #fefcf7;
-    opacity: 0.8;
-    font-size: 16px;
+  /* quality section end*/
+  /* headquarters section */
+  .hq {
+    margin-top: 128px !important;
   }
   .hq .card-img-top {
     width: 40px;
@@ -12532,7 +12570,7 @@ fieldset:disabled .btn {
 }
 
 /* about mobile end */
-/* create plan mobile */
+/*  plan mobile */
 @media (max-width: 767.98px) {
   .plan-hero {
     height: 400px;
@@ -12544,6 +12582,9 @@ fieldset:disabled .btn {
   }
   .plan-text {
     height: 163px;
+  }
+  .circles-col {
+    display: none;
   }
   .plan-steps {
     background-color: #2c343e;
@@ -12589,7 +12630,9 @@ fieldset:disabled .btn {
 }
 
 /* create plan mobile end */
+/* INDEX TABLET*/
 @media (min-width: 768px) and (max-width: 1399.98px) {
+  /* hero section*/
   .hero-row {
     height: 500px;
   }
@@ -12606,20 +12649,31 @@ fieldset:disabled .btn {
             align-items: flex-start !important;
     margin-left: 30px;
   }
+  /* hero section end*/
+  /* collection section*/
+  .coffe-heading {
+    height: 118px;
+  }
   .our-collection {
-    font-size: 72px !important;
-    height: 150px;
-    padding-top: 20px;
+    height: 118px !important;
+    font-size: 90px !important;
+    padding-top: 40px !important;
+  }
+  .coffe-row {
+    margin-top: -110px;
   }
   .coffe-card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background: RGBA(254, 252, 247, 0) !important;
   }
   .coffe-card .card-body {
     text-align: left !important;
   }
+  /* collection section end*/
+  /* why section */
   .why-container {
     height: 573px !important;
   }
@@ -12646,11 +12700,10 @@ fieldset:disabled .btn {
   .testemonials-card .card-body {
     text-align: left !important;
   }
-  .how-container {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+  /* why section end */
+  /* how it works */
+  .circles {
+    margin-left: 0 !important;
   }
   .how-heading {
     text-align: left !important;
@@ -12661,6 +12714,8 @@ fieldset:disabled .btn {
   .card-text {
     text-align: left !important;
   }
+  /* how it works end */
+  /* footer */
   .footer-navbar {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -12674,9 +12729,13 @@ fieldset:disabled .btn {
     margin-left: 30px;
     margin-bottom: 0 !important;
   }
+  /* footer end */
 }
 
+/* INDEX TABLET END*/
+/* ABOUT US TABLET*/
 @media (min-width: 768px) and (max-width: 1399.98px) {
+  /* hero section */
   .about-hero {
     height: 400px;
     background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
@@ -12685,9 +12744,11 @@ fieldset:disabled .btn {
     background-position: center;
   }
   .about-text {
-    margin-left: 40px;
-    padding-right: 10px;
+    margin-left: 55px !important;
+    padding-right: 50px;
   }
+  /* hero section end */
+  /* commitment section */
   .our-commitment {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -12701,10 +12762,16 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    margin-right: 60px !important;
+  }
+  .our-text {
+    width: 339px;
   }
   .our-text h2, .our-text .h2 {
     margin: 17px !important;
   }
+  /* commitment section end */
+  /* quality section*/
   .quality-container {
     height: 488px;
     margin-top: 240px;
@@ -12713,6 +12780,7 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    margin-bottom: 100px;
   }
   .quality-photo {
     position: relative;
@@ -12726,12 +12794,13 @@ fieldset:disabled .btn {
   }
   .quality-text {
     height: 197px;
-    padding: 0 67px;
-    margin-top: 20px;
+    margin-top: 75px;
   }
   .quality-text h2, .quality-text .h2 {
     margin-bottom: 20px;
   }
+  /* quality section end*/
+  /* headquarters section*/
   .hq-cards {
     height: 366px;
     margin-left: 0 !important;
@@ -12752,8 +12821,10 @@ fieldset:disabled .btn {
   .card-body {
     padding: 0;
   }
+  /* headquarters section end*/
 }
 
+/* ABOUT US TABLET END*/
 @media (min-width: 768px) and (max-width: 1399.98px) {
   .plan-hero {
     height: 400px;
@@ -12763,15 +12834,18 @@ fieldset:disabled .btn {
     background-position: center;
     border-radius: 10px;
   }
+  .plan-text {
+    margin-left: 55px;
+  }
   .plan-steps {
     height: 640px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+  }
+  .circles {
+    height: 96px !important;
+    margin-left: 40px;
   }
   .list {
     display: none;
@@ -12784,7 +12858,9 @@ fieldset:disabled .btn {
   }
 }
 
+/* INDEX DESKTOP*/
 @media (min-width: 1400px) {
+  /* hero section */
   .hero-text {
     text-align: left;
     margin-left: 10px;
@@ -12804,30 +12880,68 @@ fieldset:disabled .btn {
     font-size: 15px;
     line-height: 25px;
   }
+  /* hero section end*/
+  /* collection section */
+  .coffe-heading {
+    height: 196px;
+  }
+  .our-collection {
+    padding-top: 90px !important;
+    height: 196px !important;
+  }
+  .coffe-container {
+    margin-top: -130px;
+  }
+  /* collection section end */
+  /* why section */
   .why-container {
     height: 573px !important;
   }
   .why-container .why-text {
     width: 540px;
     height: 160px;
-    margin: auto;
+    margin-top: 100px !important;
   }
   .why-container .why-text p {
     font-size: 16px;
   }
   .testemonials {
-    margin-top: -330px;
+    margin-top: -240px !important;
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
+    padding: 0 35px;
   }
+  .testemonials-card {
+    margin: 20px !important;
+  }
+  /* why section end */
+  /* How it works */
   .how-container {
-    -webkit-box-orient: horizontal !important;
+    -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 453px !important;
   }
+  .how-heading {
+    margin-left: 68px !important;
+  }
+  .how-heading h1, .how-heading .h1 {
+    font-size: 24px;
+  }
+  .circles-col {
+    margin-left: 100px;
+  }
+  .how-card {
+    margin-right: 150px;
+  }
+  .how-card .card-body {
+    padding: 0;
+  }
+  /* How it works end */
+  /* footer */
   .footer-container {
     height: 120px;
     display: -webkit-box;
@@ -12837,6 +12951,9 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .footer-navbar {
     display: -webkit-box;
@@ -12847,8 +12964,11 @@ fieldset:disabled .btn {
   .footer-links {
     margin-top: 0 !important;
   }
+  /* footer end */
 }
 
+/* INDEX DESKTOP END*/
+/* ABOUT US DESKTOP*/
 @media (min-width: 1400px) {
   .about-hero {
     height: 450px;
@@ -12935,15 +13055,40 @@ fieldset:disabled .btn {
   .plan-text {
     padding-left: 40px;
   }
+  .plan-text h1, .plan-text .h1 {
+    font-size: 72px;
+  }
+  .plan-text p {
+    font-size: 16px;
+    margin-top: 50px !important;
+  }
   .plan-steps {
     height: 653px;
-    border-radius: 0;
   }
   .steps-line {
     height: 453px !important;
+    margin-left: 85px !important;
   }
   .steps-card {
     height: 355px;
+  }
+  .steps-card h3, .steps-card .h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .question {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 32px;
+    color: #83888f;
+  }
+  .question:hover {
+    color: #83888f;
+  }
+  .summary-text {
+    height: 208px;
   }
 }
 
@@ -12975,6 +13120,19 @@ fieldset:disabled .btn {
 
 .main-btn:hover {
   color: #66d2cf;
+}
+
+.circles {
+  height: 103px;
+  border-bottom: 2px solid #fdd6ba;
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0e8784;
+  border-radius: 50%;
+  margin-bottom: -16px;
 }
 
 .hamburger {

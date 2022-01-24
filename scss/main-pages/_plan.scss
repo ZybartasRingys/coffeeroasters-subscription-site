@@ -1,11 +1,12 @@
 @import "..//utilities/mixins";
 
-/* create plan  */
+/*  plan  */
 
 // plan-hero
 
 .plan-hero {
   height: 400px;
+  border-radius: 10px;
   h1 {
     @include frauces40px;
     color: $LightCream;
@@ -18,9 +19,14 @@
   }
 }
 
+.plan-text {
+  height: 182px;
+}
+
 // plan-hero end
 
-//steps
+/* steps  section*/
+
 .plan-steps {
   border-radius: 10px;
   background-color: $FooterBackground;
@@ -47,9 +53,19 @@
   }
 }
 
-//steps end
+/* steps  section end*/
 
 /* order section*/
+
+// list
+
+//list items
+
+.list-item {
+  @include frauces24px;
+  color: $DarkGreyBlue;
+  opacity: 0.4;
+}
 
 .question {
   @include frauces24px;
@@ -107,4 +123,7 @@
     height: 56px;
   }
 }
+
+/* order section end*/
+
 /* create plan  end */

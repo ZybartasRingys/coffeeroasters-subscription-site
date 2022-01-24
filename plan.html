@@ -20,7 +20,7 @@
 
       <div class="container mt-3">
         <div class="row mb-4">
-          <div class="col-11 mx-auto">
+          <div class="col-11 col-md-12 mx-auto">
             <nav class="navbar d-flex justify-content-between navbar-expand-lg">
               <a class="navbar-brand" href="#"
                 ><img
@@ -84,9 +84,9 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-11 plan-hero border mx-auto d-flex flex-column flex-md-row justify-content-md-start align-items-center justify-content-center"
+            class="col-11 col-md-12 plan-hero border mx-auto d-flex flex-column flex-md-row justify-content-md-start align-items-center justify-content-center"
           >
-            <div class="col-11 col-md-8 col-xxl-5 plan-text">
+            <div class="col-11 col-md-7 col-xxl-5 plan-text">
               <h1 class="text-center text-md-start">Create a plan</h1>
               <p class="mt-4 text-center text-md-start">
                 Build a subscription plan that best fits your needs. We offer an
@@ -107,21 +107,41 @@
       <!-- steps -->
 
       <section class="steps">
-        <div class="container d-flex flex-column align-items-center mt-5 mb-5">
+        <div
+          class="container-fluid d-flex flex-column align-items-center mt-5 mb-5"
+        >
           <div class="row d-flex flex-column justify-content-center">
             <div
-              class="col col-xxl-11 plan-steps mx-auto d-flex flex-column flex-md-row justify-content-center align-items-center"
+              class="col col-md-12 col-xxl-11 plan-steps mx-auto d-flex flex-column flex-md-column flex-xxl-column justify-content-center justify-content-xxl-start align-items-xxl-start"
             >
+              <!-- circles -->
+              <div class="col circles-col col-md-8 col-xxl-7">
+                <div
+                  class="circles mb-5 ml-5 d-flex justify-content-between align-items-end"
+                >
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+
+              <!-- circles end -->
               <div
-                class="col-11 col-md-12 col-xxl-11 steps-line mx-auto d-flex flex-column flex-md-row"
+                class="col-11 col-md-11 col-xxl-9 border steps-line mx-auto d-flex flex-column flex-md-row"
               >
                 <!-- card -->
                 <div class="col col-md-4 col-4-xl">
-                  <div class="card steps-card border mt-5 text-center">
+                  <div
+                    class="card steps-card text-center text-md-start text-xxl-start"
+                  >
                     <h2 class="mt-4">01</h2>
                     <div class="card-body">
-                      <h3 class="card-title mb-4">Pick your coffee</h3>
-                      <p class="card-text mb-4 text-center">
+                      <h3 class="card-title mb-4 text-md-start text-xxl-start">
+                        Pick your coffee
+                      </h3>
+                      <p
+                        class="card-text mb-4 text-center text-md-start text-xxl-start"
+                      >
                         Select from our evolving range of artisan coffees. Our
                         beans are ethically sourced and we pay fair prices for
                         them. There are new coffees in all profiles every month
@@ -133,11 +153,15 @@
                 <!-- card end -->
                 <!-- card -->
                 <div class="col col-md-4 col-4-xl">
-                  <div class="card steps-card mt-4 text-center">
+                  <div
+                    class="card steps-card mt-4 text-center text-md-start text-xxl-start"
+                  >
                     <h2>02</h2>
                     <div class="card-body">
-                      <h3 class="card-title mb-4">Choose the frequency</h3>
-                      <p class="card-text mb-4">
+                      <h3 class="card-title mb-4 text-md-start text-xxl-start">
+                        Choose the frequency
+                      </h3>
+                      <p class="card-text mb-4 text-md-start text-xxl-start">
                         Customize your order frequency, quantity, even your
                         roast style and grind type. Pause, skip or cancel your
                         subscription with no commitment through our online
@@ -149,11 +173,15 @@
                 <!-- card end -->
                 <!-- card -->
                 <div class="col col-md-4 col-4-xl">
-                  <div class="card steps-card mb-5 mt-4 text-center">
+                  <div
+                    class="card steps-card mb-5 mt-4 text-center text-md-start text-xxl-start"
+                  >
                     <h2>03</h2>
                     <div class="card-body">
-                      <h3 class="card-title mb-4">Receive and enjoy!</h3>
-                      <p class="card-text mb-4">
+                      <h3 class="card-title mb-4 text-md-start text-xxl-start">
+                        Receive and enjoy!
+                      </h3>
+                      <p class="card-text mb-4 text-md-start text-xxl-start">
                         We ship your package within 48 hours, freshly roasted.
                         Sit back and enjoy award-winning world-class coffees
                         curated to provide a distinct tasting experience.
@@ -175,22 +203,30 @@
       <section class="order">
         <div class="container">
           <div class="row">
-            <div
-              class="col col-xxl-10 mx-auto d-flex flex-column flex-xxl-row border"
-            >
-              <div class="col col-xxl-4 list">
-                <div class="col">01 Preferences</div>
-                <div class="col">02 Bean type</div>
-                <div class="col">03 Quantity</div>
-                <div class="col">04 Grind option</div>
-                <div class="col">05 Deliveries</div>
+            <div class="col col-xxl-10 mx-auto d-flex flex-column flex-xxl-row">
+              <div class="col col-xxl-3 list mt-5">
+                <div class="col">
+                  <h5 class="list-item">01 Preferences</h5>
+                </div>
+                <div class="col">
+                  <h5 class="list-item">02 Bean type</h5>
+                </div>
+                <div class="col">
+                  <h5 class="list-item">03 Quantity</h5>
+                </div>
+                <div class="col">
+                  <h5 class="list-item">04 Grind option</h5>
+                </div>
+                <div class="col">
+                  <h5 class="list-item">05 Deliveries</h5>
+                </div>
               </div>
 
-              <div class="col col-xxl-8 border">
+              <div class="col col-xxl-10">
                 <!-- collapse -->
-                <div class="col-11 col-xxl-7 mx-auto mt-5">
-                  <div class="col border">
-                    <p class="d-flex flex-row">
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <div class="col">
+                    <p class="d-flex flex-row justify-content-between">
                       <button
                         class="btn question"
                         type="button"
@@ -238,8 +274,8 @@
                 <!-- collapse end -->
 
                 <!-- collapse -->
-                <div class="col-11 col-xxl-7 mx-auto mt-5 border">
-                  <p class="d-flex flex-row">
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <p class="d-flex flex-row justify-content-between">
                     <button
                       class="btn question"
                       type="button"
@@ -286,8 +322,8 @@
                 <!-- collapse end -->
 
                 <!-- collapse -->
-                <div class="col-11 col-xxl-7 mx-auto mt-5 border">
-                  <p class="d-flex flex-row">
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <p class="d-flex flex-row justify-content-between">
                     <button
                       class="btn question"
                       type="button"
@@ -334,8 +370,8 @@
                 <!-- collapse end -->
 
                 <!-- collapse -->
-                <div class="col-11 col-xxl-7 mx-auto mt-5 border">
-                  <p class="d-flex flex-row">
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <p class="d-flex flex-row justify-content-between">
                     <button
                       class="btn question"
                       type="button"
@@ -382,8 +418,8 @@
                 <!-- collapse end -->
 
                 <!-- collapse -->
-                <div class="col-11 col-xxl-7 mx-auto mt-5 border">
-                  <p class="d-flex flex-row">
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <p class="d-flex flex-row justify-content-between">
                     <button
                       class="btn question"
                       type="button"
@@ -431,8 +467,10 @@
 
             <!-- oder summary -->
 
-            <div class="col-12 order-summary mx-auto">
-              <div class="col-12 summary-text mx-auto mt-5 px-4">
+            <div
+              class="col-10 col-md-12 col-xxl-10 order-summary mx-auto d-flex flex-column align-items-xxl-end align-items-md-center"
+            >
+              <div class="col-12 col-xxl-8 summary-text mt-5 px-4">
                 <h5 class="pt-4">Order Summary</h5>
                 <p class="mt-4">
                   “I drink coffee as <span class="how">_______</span>, with a

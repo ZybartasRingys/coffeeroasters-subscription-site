@@ -1,6 +1,6 @@
 @import "..//utilities/mixins";
 
-//hero container
+/* Hero*/
 
 .hero-row {
   height: 600px;
@@ -27,9 +27,9 @@
   }
 }
 
-// hero container end
+/* Hero end*/
 
-// collection section
+/* Collection section*/
 
 .collection {
   background: $LightCream;
@@ -47,32 +47,18 @@
   }
 
   .our-collection {
+    height: 72px;
     @include frauces40px;
-    background: linear-gradient(#979797 0%, #fff 100%);
+    font-size: 130px;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    text-align: center;
+    background-color: #83888f;
+    background-image: linear-gradient(180deg, #83888f 0%, #fefcf7 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  // .our-collection::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   left: 0;
-  //   background-image: -webkit-gradient(
-  //     linear,
-  //     left top,
-  //     left bottom,
-  //     from(rgba(254, 252, 247, 0.0001)),
-  //     to(#fefcf7)
-  //   );
-  //   background-image: linear-gradient(
-  //     rgba(254, 252, 247, 0.0001) 0%,
-  //     #fefcf7 100%
-  //   );
-  // }
 }
 
 // coffe images
@@ -81,9 +67,13 @@
   height: 151px;
 }
 
-// collection section end
+.coffe-card {
+  background: RGBA(254, 252, 247, 0) !important;
+}
 
-//why container
+/* Collection section end*/
+
+/* Why section*/
 
 .why-container {
   height: 902px;
@@ -103,10 +93,6 @@
     }
   }
 }
-
-//why container end
-
-// testemonial cards
 
 .testemonials-card {
   background-color: #0e8784;
@@ -130,9 +116,9 @@
   height: 72px;
 }
 
-// testemonial cards end
+/* Why section end*/
 
-// how it works
+/* How it works section */
 
 .how-heading {
   @include frauces24px;
@@ -158,20 +144,4 @@
     color: $DarkGreyBlue;
   }
 }
-// how it works end
-
-// circles
-
-.circle {
-  height: 31px;
-  width: 31px;
-  background: #fefcf7;
-  border: 2px solid #0e8784;
-  box-sizing: border-box;
-  border-radius: 50%;
-}
-
-// .circle-line {
-//   width: 50px;
-//   height: 2px;
-// }
+/* How it works section end*/

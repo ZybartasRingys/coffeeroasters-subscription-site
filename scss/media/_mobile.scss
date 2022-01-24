@@ -12,13 +12,13 @@
     height: 18px;
   }
 
-  //hero container
+  //hamburger
 
-  .hero-row {
-    height: 500px;
+  .hamburger {
+    display: block !important;
   }
 
-  // why section
+  /* hero section */
 
   .hero-col {
     height: 100%;
@@ -27,23 +27,49 @@
     border-radius: 10px;
   }
 
+  .hero-row {
+    height: 500px;
+  }
+
+  .about-text {
+    padding: 10px;
+  }
+
+  /* hero section end*/
+
+  /* collection section*/
+
+  .coffe-heading {
+    height: 72px;
+
+    .our-collection {
+      font-size: 40px;
+    }
+  }
+
+  /* collection section end*/
+
+  /* why section*/
+
+  .why {
+    margin-bottom: 125px;
+  }
+
   //testemonials
 
   .testemonials {
     margin-top: -650px;
   }
 
-  //hamburger
+  /* why section end*/
 
-  .hamburger {
-    display: block !important;
-  }
-
-  //circles
+  /* how it works*/
 
   .circles {
     display: none;
   }
+
+  /* how it works end*/
 }
 
 /* index mobile end */
@@ -51,7 +77,7 @@
 /* about mobile */
 
 @include media-breakpoint-between(xs, md) {
-  // hero section
+  /* hero section */
   .about-hero {
     height: 400px;
     background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
@@ -74,9 +100,13 @@
     height: 400px;
   }
 
-  //hero section end
+  /* hero section end */
 
-  // commitment section
+  /* commitment section */
+
+  .commitment {
+    margin-bottom: 201px !important;
+  }
 
   .our-commitment {
     height: 901px;
@@ -104,9 +134,13 @@
     }
   }
 
-  // commitment section end
+  /* commitment section end */
 
-  // quality section
+  /* quality section*/
+
+  .quality-container {
+    height: 508px;
+  }
 
   .quality-photo {
     position: relative;
@@ -114,34 +148,20 @@
     background-image: url(/assets/about/mobile/image-quality.jpg);
     @include backgroundIMG;
     border-radius: 10px;
-    margin-bottom: -80px;
+    margin-top: -80px;
   }
 
   .quality-text {
-    height: 509px;
-    background-image: url(/assets/about/mobile/bg-quality.png);
-    @include backgroundIMG;
-    border-radius: 10px;
-
-    h2 {
-      @include frauces28px;
-      color: $LightCream;
-      margin-top: 102px;
-    }
-
-    p {
-      @include barlow15px;
-      color: $LightCream;
-      opacity: 0.8;
-      font-size: 16px;
-    }
+    height: 306px;
+    margin-top: 65px;
   }
 
-  // quality section end
+  /* quality section end*/
 
-  // head quarters section
+  /* headquarters section */
 
   .hq {
+    margin-top: 128px !important;
     .card-img-top {
       width: 40px;
       height: 49px;
@@ -158,7 +178,7 @@
 
 /* about mobile end */
 
-/* create plan mobile */
+/*  plan mobile */
 
 @include media-breakpoint-between(xs, md) {
   // plan hero
@@ -173,6 +193,14 @@
   .plan-text {
     height: 163px;
   }
+
+  // steps
+
+  .circles-col {
+    display: none;
+  }
+
+  // steps end
 
   // plan how it works
 

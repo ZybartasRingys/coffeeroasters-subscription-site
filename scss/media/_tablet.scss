@@ -1,5 +1,7 @@
+/* INDEX TABLET*/
+
 @include media-breakpoint-between(md, xxl) {
-  //hero container
+  /* hero section*/
 
   .hero-row {
     height: 500px;
@@ -15,27 +17,35 @@
     margin-left: 30px;
   }
 
-  // collection section
+  /* hero section end*/
 
-  .our-collection {
-    font-size: 72px !important;
-    height: 150px;
-    padding-top: 20px;
+  /* collection section*/
+
+  .coffe-heading {
+    height: 118px;
   }
 
-  // .coffe-row {
-  //   margin-top: -150px;
-  // }
+  .our-collection {
+    height: 118px !important;
+    font-size: 90px !important;
+    padding-top: 40px !important;
+  }
+
+  .coffe-row {
+    margin-top: -110px;
+  }
 
   .coffe-card {
     flex-direction: row;
-
+    background: RGBA(254, 252, 247, 0) !important;
     .card-body {
       text-align: left !important;
     }
   }
 
-  // why section
+  /* collection section end*/
+
+  /* why section */
 
   .why-container {
     height: 573px !important;
@@ -68,10 +78,12 @@
     }
   }
 
-  // how it works
+  /* why section end */
 
-  .how-container {
-    flex-direction: row !important;
+  /* how it works */
+
+  .circles {
+    margin-left: 0 !important;
   }
 
   .how-heading {
@@ -85,7 +97,9 @@
     text-align: left !important;
   }
 
-  //footer
+  /* how it works end */
+
+  /* footer */
 
   .footer-navbar {
     flex-direction: row !important;
@@ -96,12 +110,16 @@
       margin-bottom: 0 !important;
     }
   }
+
+  /* footer end */
 }
 
-// about us teblet
+/* INDEX TABLET END*/
+
+/* ABOUT US TABLET*/
 
 @include media-breakpoint-between(md, xxl) {
-  //hero
+  /* hero section */
   .about-hero {
     height: 400px;
     background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
@@ -109,11 +127,13 @@
   }
 
   .about-text {
-    margin-left: 40px;
-    padding-right: 10px;
+    margin-left: 55px !important;
+    padding-right: 50px;
   }
 
-  //commitment
+  /* hero section end */
+
+  /* commitment section */
 
   .our-commitment {
     flex-direction: row !important;
@@ -124,15 +144,19 @@
     background-image: url(/assets/about/tablet/image-commitment.jpg);
     @include backgroundIMG;
     border-radius: 10px;
+    margin-right: 60px !important;
   }
 
   .our-text {
+    width: 339px;
     h2 {
       margin: 17px !important;
     }
   }
 
-  //quality
+  /* commitment section end */
+
+  /* quality section*/
 
   .quality-container {
     height: 488px;
@@ -140,6 +164,7 @@
     background-image: url(/assets/about/tablet/bg-quality.png);
     @include backgroundIMG;
     border-radius: 10px;
+    margin-bottom: 100px;
   }
 
   .quality-photo {
@@ -153,15 +178,16 @@
 
   .quality-text {
     height: 197px;
-    padding: 0 67px;
-    margin-top: 20px;
+    margin-top: 75px;
 
     h2 {
       margin-bottom: 20px;
     }
   }
 
-  // headquarters
+  /* quality section end*/
+
+  /* headquarters section*/
 
   .hq-cards {
     height: 366px;
@@ -177,17 +203,14 @@
     display: flex;
   }
 
-  // .hq {
-  //   .card-img-top {
-  //     width: 40px;
-  //     height: 49px;
-  //   }
-  // }
-
   .card-body {
     padding: 0;
   }
+
+  /* headquarters section end*/
 }
+
+/* ABOUT US TABLET END*/
 
 // plan tablet
 
@@ -201,13 +224,24 @@
     border-radius: 10px;
   }
 
+  .plan-text {
+    margin-left: 55px;
+  }
+
+  //plan hero end
+
   // steps
 
   .plan-steps {
     height: 640px;
     // background-color: $FooterBackground;
     display: flex;
-    flex-direction: row !important;
+    // flex-direction: row !important;
+  }
+
+  .circles {
+    height: 96px !important;
+    margin-left: 40px;
   }
 
   // order

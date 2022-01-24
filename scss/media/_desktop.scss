@@ -1,7 +1,7 @@
-@include media-breakpoint-up(xxl) {
-  // index
+/* INDEX DESKTOP*/
 
-  //hero
+@include media-breakpoint-up(xxl) {
+  /* hero section */
 
   .hero-text {
     text-align: left;
@@ -17,9 +17,26 @@
     }
   }
 
-  // .coffe-row {
-  //   width: 1120px;
-  // }
+  /* hero section end*/
+
+  /* collection section */
+
+  .coffe-heading {
+    height: 196px;
+  }
+
+  .our-collection {
+    padding-top: 90px !important;
+    height: 196px !important;
+  }
+
+  .coffe-container {
+    margin-top: -130px;
+  }
+
+  /* collection section end */
+
+  /* why section */
 
   .why-container {
     height: 573px !important;
@@ -27,30 +44,57 @@
     .why-text {
       width: 540px;
       height: 160px;
-      margin: auto;
-
+      margin-top: 100px !important;
       p {
         font-size: 16px;
       }
     }
   }
   .testemonials {
-    margin-top: -330px;
+    margin-top: -240px !important;
     flex-direction: row !important;
+    padding: 0 35px;
   }
+
+  .testemonials-card {
+    margin: 20px !important;
+  }
+
+  /* why section end */
+
+  /* How it works */
 
   .how-container {
-    flex-direction: row !important;
+    flex-direction: column !important;
+    height: 453px !important;
   }
 
-  //index end
+  .how-heading {
+    margin-left: 68px !important;
+    h1 {
+      font-size: 24px;
+    }
+  }
 
-  //footer
+  .circles-col {
+    margin-left: 100px;
+  }
+
+  .how-card {
+    margin-right: 150px;
+    .card-body {
+      padding: 0;
+    }
+  }
+  /* How it works end */
+
+  /* footer */
 
   .footer-container {
     height: 120px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-navbar {
@@ -61,9 +105,13 @@
   .footer-links {
     margin-top: 0 !important;
   }
+
+  /* footer end */
 }
 
-//about us desktop
+/* INDEX DESKTOP END*/
+
+/* ABOUT US DESKTOP*/
 
 @include media-breakpoint-up(xxl) {
   // hero
@@ -147,20 +195,51 @@
 
   .plan-text {
     padding-left: 40px;
+
+    h1 {
+      font-size: 72px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-top: 50px !important;
+    }
   }
 
   // steps
 
   .plan-steps {
     height: 653px;
-    border-radius: 0;
   }
+
+  //circles
 
   .steps-line {
     height: 453px !important;
+    margin-left: 85px !important;
   }
 
   .steps-card {
     height: 355px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  // order section
+
+  .question {
+    @include frauces40px;
+    color: $Question;
+
+    &:hover {
+      color: $Question;
+    }
+  }
+
+  .summary-text {
+    height: 208px;
   }
 }
