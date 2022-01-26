@@ -12203,6 +12203,10 @@ fieldset:disabled .btn {
   border-radius: 10px;
 }
 
+.quality-photo {
+  border-radius: 10px;
+}
+
 .quality-text h2, .quality-text .h2 {
   font-family: "Fraunces";
   font-style: normal;
@@ -12332,19 +12336,6 @@ fieldset:disabled .btn {
   line-height: 32px;
   color: #333d4b;
   opacity: 0.4;
-}
-
-.question {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 32px;
-  color: #83888f;
-}
-
-.question:hover {
-  color: #83888f;
 }
 
 .arrow {
@@ -12570,8 +12561,9 @@ fieldset:disabled .btn {
 }
 
 /* about mobile end */
-/*  plan mobile */
+/*  Plan mobile */
 @media (max-width: 767.98px) {
+  /*  plan hero */
   .plan-hero {
     height: 400px;
     background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
@@ -12579,16 +12571,24 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    margin-bottom: 100px;
   }
   .plan-text {
     height: 163px;
   }
+  /*  plan hero end*/
+  /*  Steps section*/
+  .steps-card .card-body {
+    padding: 0 !important;
+  }
   .circles-col {
     display: none;
   }
+  /*  Steps section end*/
   .plan-steps {
     background-color: #2c343e;
   }
+  /*  Order section*/
   .list {
     display: none;
   }
@@ -12627,6 +12627,7 @@ fieldset:disabled .btn {
     line-height: 32px;
     color: #0e8784;
   }
+  /*  Order section end*/
 }
 
 /* create plan mobile end */
@@ -12825,7 +12826,9 @@ fieldset:disabled .btn {
 }
 
 /* ABOUT US TABLET END*/
+/* PlAN TABLET*/
 @media (min-width: 768px) and (max-width: 1399.98px) {
+  /* PLAN HERO*/
   .plan-hero {
     height: 400px;
     background-image: url(/assets/plan/tablet/image-hero-blackcup.jpg);
@@ -12836,16 +12839,24 @@ fieldset:disabled .btn {
   }
   .plan-text {
     margin-left: 55px;
+    padding-right: 20px;
   }
+  /* PlAN HERO END*/
   .plan-steps {
     height: 640px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .circles-col {
+    margin-left: 30px;
+  }
   .circles {
-    height: 96px !important;
+    height: 26px !important;
     margin-left: 40px;
+  }
+  .question {
+    width: 390px !important;
   }
   .list {
     display: none;
@@ -12970,21 +12981,29 @@ fieldset:disabled .btn {
 /* INDEX DESKTOP END*/
 /* ABOUT US DESKTOP*/
 @media (min-width: 1400px) {
+  /* hero*/
   .about-hero {
     height: 450px;
     background-image: url(/assets/about/desktop/image-hero-whitecup.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 169px;
   }
   .about-text {
     margin-left: 84px;
   }
+  .about-text p {
+    font-size: 16px;
+  }
+  /* hero end*/
+  /* commitment section */
   .our-commitment {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
+    margin-bottom: 256px;
   }
   .our-photo {
     height: 520px;
@@ -12994,9 +13013,18 @@ fieldset:disabled .btn {
     background-position: center;
     border-radius: 10px;
   }
+  .our-text {
+    height: 340px;
+  }
   .our-text h2, .our-text .h2 {
+    font-size: 40px;
     margin: 17px !important;
   }
+  .our-text p {
+    font-size: 16px;
+  }
+  /* commitment section end */
+  /* quality section */
   .quality-container {
     height: 474px;
     background-image: url(/assets/about/desktop/bg-quality.png);
@@ -13027,8 +13055,14 @@ fieldset:disabled .btn {
     text-align: start !important;
   }
   .quality-text h2, .quality-text .h2 {
+    margin-top: 90px;
     font-size: 40px;
     margin-bottom: 20px;
+  }
+  /* quality section end */
+  /* quality section  */
+  .hq-cards {
+    margin-top: 168px;
   }
   .h-cards {
     display: -webkit-box;
@@ -13042,15 +13076,20 @@ fieldset:disabled .btn {
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
   }
+  /* quality section end  */
 }
 
+/* ABOUT US DESKTOP*/
+/* Plan DESKTOP*/
 @media (min-width: 1400px) {
+  /* Plan hero*/
   .plan-hero {
     height: 450px;
     background-image: url(/assets/plan/desktop/image-hero-blackcup.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 118px;
   }
   .plan-text {
     padding-left: 40px;
@@ -13062,8 +13101,13 @@ fieldset:disabled .btn {
     font-size: 16px;
     margin-top: 50px !important;
   }
+  /* Plan hero end*/
+  /* Steps section*/
   .plan-steps {
     height: 653px;
+  }
+  .circles-col {
+    margin-left: 80px;
   }
   .steps-line {
     height: 453px !important;
@@ -13071,21 +13115,19 @@ fieldset:disabled .btn {
   }
   .steps-card {
     height: 355px;
+    padding-right: 120px;
+  }
+  .steps-card .card-body {
+    padding: 0;
   }
   .steps-card h3, .steps-card .h3 {
     font-size: 32px;
     line-height: 36px;
   }
+  /* Steps section end*/
+  /* Order section*/
   .question {
-    font-family: "Fraunces";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 32px;
-    color: #83888f;
-  }
-  .question:hover {
-    color: #83888f;
+    width: 900px !important;
   }
   .summary-text {
     height: 208px;
@@ -13120,6 +13162,22 @@ fieldset:disabled .btn {
 
 .main-btn:hover {
   color: #66d2cf;
+}
+
+.question {
+  width: 240px;
+  padding: 0 !important;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  text-align: start;
+}
+
+.question:hover {
+  color: #83888f;
 }
 
 .circles {
@@ -13179,11 +13237,14 @@ fieldset:disabled .btn {
 
 .mobile-nav {
   position: absolute;
-  height: 577px;
-  top: 50px;
+  height: 557px;
+  top: 90px;
+  left: 0px;
   background-color: #fefcf7;
   z-index: 1000;
   display: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fefcf7), color-stop(55.94%, rgba(254, 252, 247, 0.504981)));
+  background: linear-gradient(#fefcf7 50%, rgba(254, 252, 247, 0.504981) 55.94%);
 }
 
 .mobile-nav .mobile-link {
@@ -13210,8 +13271,6 @@ fieldset:disabled .btn {
 }
 
 .mobile-nav-btn {
-  border: 1px solid black;
-  width: 327px;
   height: 244px;
 }
 

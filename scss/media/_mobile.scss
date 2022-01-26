@@ -178,29 +178,38 @@
 
 /* about mobile end */
 
-/*  plan mobile */
+/*  Plan mobile */
 
 @include media-breakpoint-between(xs, md) {
-  // plan hero
+  /*  plan hero */
 
   .plan-hero {
     height: 400px;
     background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
     @include backgroundIMG;
     border-radius: 10px;
+    margin-bottom: 100px;
   }
 
   .plan-text {
     height: 163px;
   }
 
-  // steps
+  /*  plan hero end*/
+
+  /*  Steps section*/
+
+  .steps-card {
+    .card-body {
+      padding: 0 !important;
+    }
+  }
 
   .circles-col {
     display: none;
   }
 
-  // steps end
+  /*  Steps section end*/
 
   // plan how it works
 
@@ -208,7 +217,7 @@
     background-color: $FooterBackground;
   }
 
-  // order
+  /*  Order section*/
 
   //list
 
@@ -245,6 +254,8 @@
       color: $Darkcyan;
     }
   }
+
+  /*  Order section end*/
 }
 
 /* create plan mobile end */

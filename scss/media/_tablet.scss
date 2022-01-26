@@ -212,10 +212,10 @@
 
 /* ABOUT US TABLET END*/
 
-// plan tablet
+/* PlAN TABLET*/
 
 @include media-breakpoint-between(md, xxl) {
-  //plan hero
+  /* PLAN HERO*/
 
   .plan-hero {
     height: 400px;
@@ -226,9 +226,10 @@
 
   .plan-text {
     margin-left: 55px;
+    padding-right: 20px;
   }
 
-  //plan hero end
+  /* PlAN HERO END*/
 
   // steps
 
@@ -239,12 +240,22 @@
     // flex-direction: row !important;
   }
 
+  .circles-col {
+    margin-left: 30px;
+  }
+
   .circles {
-    height: 96px !important;
+    height: 26px !important;
     margin-left: 40px;
   }
 
   // order
+
+  // question btn
+
+  .question {
+    width: 390px !important;
+  }
 
   .list {
     display: none;

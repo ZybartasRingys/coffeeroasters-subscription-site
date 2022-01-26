@@ -1,10 +1,23 @@
 .mobile-nav {
   position: absolute;
-  height: 577px;
-  top: 50px;
+  height: 557px;
+  top: 90px;
+  left: 0px;
   background-color: $LightCream;
   z-index: 1000;
   display: none;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(50%, #fefcf7),
+    color-stop(55.94%, rgba(254, 252, 247, 0.504981))
+  );
+  background: linear-gradient(
+    #fefcf7 50%,
+    rgba(254, 252, 247, 0.504981) 55.94%
+  );
 
   .mobile-link {
     @include frauces24px;
@@ -20,7 +33,7 @@
 }
 
 .mobile-nav-btn {
-  border: 1px solid black;
-  width: 327px;
+  // border: 1px solid black;
+
   height: 244px;
 }

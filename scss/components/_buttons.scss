@@ -16,3 +16,17 @@
     color: $ButtonHover;
   }
 }
+
+// qestio btn
+
+.question {
+  width: 240px;
+  padding: 0 !important;
+  @include frauces24px;
+  color: $Question;
+  text-align: start;
+
+  &:hover {
+    color: $Question;
+  }
+}

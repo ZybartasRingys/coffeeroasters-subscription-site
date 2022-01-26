@@ -67,15 +67,6 @@
   opacity: 0.4;
 }
 
-.question {
-  @include frauces24px;
-  color: $Question;
-
-  &:hover {
-    color: $Question;
-  }
-}
-
 .arrow {
   width: 19px;
   height: 12px;

@@ -114,23 +114,29 @@
 /* ABOUT US DESKTOP*/
 
 @include media-breakpoint-up(xxl) {
-  // hero
+  /* hero*/
   .about-hero {
     height: 450px;
     background-image: url(/assets/about/desktop/image-hero-whitecup.jpg);
     @include backgroundIMG;
+    margin-bottom: 169px;
   }
 
   .about-text {
     margin-left: 84px;
+
+    p {
+      font-size: 16px;
+    }
   }
 
-  // hero end
+  /* hero end*/
 
-  // commitment section
+  /* commitment section */
 
   .our-commitment {
     flex-direction: row !important;
+    margin-bottom: 256px;
   }
 
   .our-photo {
@@ -141,14 +147,19 @@
   }
 
   .our-text {
+    height: 340px;
     h2 {
+      font-size: 40px;
       margin: 17px !important;
+    }
+    p {
+      font-size: 16px;
     }
   }
 
-  // commitment section end
+  /* commitment section end */
 
-  // quality section
+  /* quality section */
 
   .quality-container {
     height: 474px;
@@ -169,28 +180,42 @@
   .quality-text {
     justify-content: flex-start !important;
     text-align: start !important;
+
     h2 {
+      margin-top: 90px;
       font-size: 40px;
       margin-bottom: 20px;
     }
   }
 
-  // HQ section
+  /* quality section end */
+
+  /* quality section  */
+
+  .hq-cards {
+    margin-top: 168px;
+  }
 
   .h-cards {
     display: flex;
     flex-direction: row;
     justify-content: flex-start !important;
   }
+
+  /* quality section end  */
 }
 
-// plan desktop
+/* ABOUT US DESKTOP*/
+
+/* Plan DESKTOP*/
 
 @include media-breakpoint-up(xxl) {
+  /* Plan hero*/
   .plan-hero {
     height: 450px;
     background-image: url(/assets/plan/desktop/image-hero-blackcup.jpg);
     @include backgroundIMG;
+    margin-bottom: 118px;
   }
 
   .plan-text {
@@ -206,13 +231,19 @@
     }
   }
 
-  // steps
+  /* Plan hero end*/
+
+  /* Steps section*/
 
   .plan-steps {
     height: 653px;
   }
 
   //circles
+
+  .circles-col {
+    margin-left: 80px;
+  }
 
   .steps-line {
     height: 453px !important;
@@ -221,22 +252,23 @@
 
   .steps-card {
     height: 355px;
+    padding-right: 120px;
 
+    .card-body {
+      padding: 0;
+    }
     h3 {
       font-size: 32px;
       line-height: 36px;
     }
   }
 
-  // order section
+  /* Steps section end*/
+
+  /* Order section*/
 
   .question {
-    @include frauces40px;
-    color: $Question;
-
-    &:hover {
-      color: $Question;
-    }
+    width: 900px !important;
   }
 
   .summary-text {
