@@ -12082,7 +12082,7 @@ fieldset:disabled .btn {
   border-radius: 8px;
 }
 
-.testemonials-card h5, .testemonials-card .h5 {
+.testemonials-card h4, .testemonials-card .h4 {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
