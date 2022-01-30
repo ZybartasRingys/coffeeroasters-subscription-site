@@ -1,0 +1,11 @@
+@import "..//utilities/mixins";
+
+// sub-card hover
+
+.sub-card:hover {
+  background-color: $PaleOrange;
+}
+
+.sub-card.active {
+  background-color: #0e8784;
+}

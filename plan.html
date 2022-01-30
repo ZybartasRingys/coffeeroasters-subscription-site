@@ -20,7 +20,7 @@
 
       <div class="container mt-3">
         <div class="row mb-4">
-          <div class="col-11 col-md-12 mx-auto">
+          <div class="col-11 col-md-12 col-xxl-12 mx-auto">
             <nav class="navbar d-flex justify-content-between navbar-expand-lg">
               <a class="navbar-brand" href="#"
                 ><img
@@ -51,30 +51,22 @@
                   id="close-btn"
                 />
               </div>
-
-              <!-- mobile nav -->
-
-              <div class="col-12 mobile-nav pt-5">
-                <a
-                  class="mobile-link mb-4"
-                  aria-current="page"
-                  href="/index.html"
-                  >Home</a
-                >
-                <a class="mobile-link mb-4" href="/about.html">About us</a>
-                <a class="mobile-link" href="/plan.html">Create Your Plan</a>
-
-                <div class="row mt-5">
-                  <div
-                    class="col-11 d-flex flex-column align-items-center mobile-nav-btn"
-                  >
-                    <a href="/plan.html" class="btn main-btn pt-3"
-                      >Create your plan</a
-                    >
-                  </div>
-                </div>
-              </div>
             </nav>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- mobile nav -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mobile-nav pt-5">
+            <a class="mobile-link mb-4" aria-current="page" href="/index.html"
+              >Home</a
+            >
+            <a class="mobile-link mb-4" href="/about.html">About us</a>
+            <a class="mobile-link" href="/plan.html">Create Your Plan</a>
           </div>
         </div>
       </div>
@@ -206,66 +198,81 @@
         <div class="container">
           <div class="row">
             <div class="col col-xxl-10 mx-auto d-flex flex-column flex-xxl-row">
-              <div class="col col-xxl-3 list mt-5">
-                <div class="col">
-                  <h5 class="list-item">01 Preferences</h5>
+              <div class="col options col-xxl-3 mt-5">
+                <div class="col list d-flex align-items-center">
+                  <h5 class="list-item">
+                    <span class="number">01</span> Preferences
+                  </h5>
                 </div>
-                <div class="col">
-                  <h5 class="list-item">02 Bean type</h5>
+                <div class="col list d-flex align-items-center">
+                  <h5 class="list-item">
+                    <span class="number">02</span> Bean type
+                  </h5>
                 </div>
-                <div class="col">
-                  <h5 class="list-item">03 Quantity</h5>
+                <div class="col list d-flex align-items-center">
+                  <h5 class="list-item">
+                    <span class="number">03</span> Quantity
+                  </h5>
                 </div>
-                <div class="col">
-                  <h5 class="list-item">04 Grind option</h5>
+                <div class="col list d-flex align-items-center">
+                  <h5 class="list-item">
+                    <span class="number">04</span> Grind option
+                  </h5>
                 </div>
-                <div class="col">
+                <div class="col list d-flex align-items-center">
                   <h5 class="list-item">05 Deliveries</h5>
                 </div>
               </div>
 
+              <!-- collapse container -->
+
               <div class="col col-xxl-10">
                 <!-- collapse -->
-                <div class="col-12 col-xxl-9 mx-auto mt-5">
-                  <div
-                    class="col-11 d-flex justify-content-start align-items-start"
-                  >
-                    <p class="d-flex flex-row justify-content-between">
-                      <button
-                        class="btn question"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseExample"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        How do you drink your coffe?
-                      </button>
-                      <img
-                        class="arrow mt-3 pr-2"
-                        src="/assets/plan/desktop/icon-arrow.svg"
-                        alt="Arrow"
-                      />
-                    </p>
-                  </div>
 
+                <div class="col-11 col-xxl-9 mx-auto mt-5">
+                  <p class="d-flex flex-row justify-content-between">
+                    <button
+                      class="btn question"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      How do you drink your coffe?
+                    </button>
+                    <img
+                      class="arrow mt-3 pr-2"
+                      src="/assets/plan/desktop/icon-arrow.svg"
+                      alt="Arrow"
+                    />
+                  </p>
                   <div class="collapse" id="collapseExample">
                     <div class="cards">
-                      <div class="card card-body sub-card text-start mb-3">
-                        <h5>Capsule</h5>
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="first-card"
+                      >
+                        <h5 id="text">Capsule</h5>
                         <p>
                           Compatible with Nespresso systems and similar brewers
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start mb-3">
-                        <h5>Filter</h5>
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="first-card"
+                      >
+                        <h5 id="text">Filter</h5>
                         <p>
                           For pour over or drip methods like Aeropress, Chemex,
                           and V60
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start">
-                        <h5>Espresso</h5>
+                      <div
+                        class="card card-body sub-card text-start"
+                        id="first-card"
+                      >
+                        <h5 id="text">Espresso</h5>
                         <p>
                           Dense and finely ground beans for an intense,
                           flavorful experience
@@ -298,21 +305,30 @@
                   </p>
                   <div class="collapse" id="collapseExample1">
                     <div class="cards">
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="second-card"
+                      >
                         <h5>Single origin</h5>
                         <p>
                           Distinct, high quality coffee from a specific
                           family-owned farm
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="second-card"
+                      >
                         <h5>Decaf</h5>
                         <p>
                           Just like regular coffee, except the caffeine has been
                           removed
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start">
+                      <div
+                        class="card card-body sub-card text-start"
+                        id="second-card"
+                      >
                         <h5>Blended</h5>
                         <p>
                           Combination of two or three dark roasted beans of
@@ -346,21 +362,30 @@
                   </p>
                   <div class="collapse" id="collapseExample2">
                     <div class="cards">
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="third-card"
+                      >
                         <h5>250g</h5>
                         <p>
                           Perfect for the solo drinker. Yields about 12
                           delicious cups.
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="third-card"
+                      >
                         <h5>500g</h5>
                         <p>
                           Perfect option for a couple. Yields about 40
                           delectable cups.
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start">
+                      <div
+                        class="card card-body sub-card text-start"
+                        id="third-card"
+                      >
                         <h5>1000g</h5>
                         <p>
                           Perfect for offices and events. Yields about 90
@@ -395,20 +420,29 @@
                   </p>
                   <div class="collapse" id="collapseExample3">
                     <div class="cards">
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="fourth-card"
+                      >
                         <h5>Wholebean</h5>
                         <p>
                           Best choice if you cherish the full sensory experience
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="fourth-card"
+                      >
                         <h5>Filter</h5>
                         <p>
                           For drip or pour-over coffee methods such as V60 or
                           Aeropress
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start">
+                      <div
+                        class="card card-body sub-card text-start"
+                        id="fourth-card"
+                      >
                         <h5>Cafetiére</h5>
                         <p>
                           Course ground beans specially suited for french press
@@ -442,20 +476,29 @@
                   </p>
                   <div class="collapse" id="collapseExample4">
                     <div class="cards">
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="fifth-card"
+                      >
                         <h5>Every week</h5>
                         <p>
                           $14.00 per shipment. Includes free first-class
                           shipping.
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start mb-3">
+                      <div
+                        class="card card-body sub-card text-start mb-3"
+                        id="fifth-card"
+                      >
                         <h5>Every 2 weeks</h5>
                         <p>
                           $17.25 per shipment. Includes free priority shipping.
                         </p>
                       </div>
-                      <div class="card card-body sub-card text-start">
+                      <div
+                        class="card card-body sub-card text-start"
+                        id="fifth-card"
+                      >
                         <h5>Every month</h5>
                         <p>
                           $22.50 per shipment. Includes free priority shipping.
@@ -467,6 +510,51 @@
 
                 <!-- collapse -->
               </div>
+
+              <!-- modal  -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content modal-container">
+                    <div class="modal-header">
+                      <h5 class="modal-title pl-3" id="exampleModalLongTitle">
+                        Order summary
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p class="mt-4 modal-order-text">
+                        “I drink coffee as <span class="how">_______</span>,
+                        with a <span class="type">_______</span> type of bean.
+                        <span class="how-much">_____</span> ground ala
+                        <span class="grind">_______</span>, sent to me
+                        <span class="deliver">_____</span>.”
+                      </p>
+
+                      <p class="order-p">
+                        is this correct? you can proceed to checkout or go back
+                        to plan selection if something is off. Subscription
+                        discount codes can also be redeemed at the checkout.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <span class="value"> $14.00 / mo</span>
+                      <button type="button" class="btn main-btn">
+                        Checkout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modal end  -->
             </div>
 
             <!-- oder summary -->
@@ -485,7 +573,13 @@
                 </p>
               </div>
               <div class="col summary-btn text-center">
-                <button class="main-btn mt-5">Create my plan!</button>
+                <button
+                  class="main-btn mt-5"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Create my plan!
+                </button>
               </div>
             </div>
 
@@ -505,19 +599,35 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-11 mx-auto mt-5 mb-5 pt-5 footer-container text-center border"
+            class="col-11 mx-auto mt-5 mb-5 pt-5 footer-container text-center"
           >
-            <div class="footer-logo">
-              <img src="/assets/shared/desktop/footer-logo.svg" alt="Logo" />
+            <div
+              class="col col-xxl-7 d-flex flex-column flex-md-column flex-xxl-row justify-content-between"
+            >
+              <!-- footer logo -->
+              <div class="col col-xxl-5">
+                <div class="footer-logo">
+                  <img
+                    src="/assets/shared/desktop/footer-logo.svg"
+                    alt="Logo"
+                  />
+                </div>
+              </div>
+
+              <!-- footer logo end -->
+
+              <!-- footer navbar -->
+
+              <div
+                class="col col-md-7 col-xxl-5 mx-auto d-flex flex-column flex-xxl-row footer-navbar justify-content-between"
+              >
+                <a class="footer-link" aria-current="page" href="#">Home</a>
+                <a class="footer-link" href="#">About us</a>
+                <a class="footer-link" href="#">Create your plan</a>
+              </div>
             </div>
 
-            <div
-              class="footer-navbar d-flex flex-column flex-xxl-row align-items-center mt-5"
-            >
-              <a class="footer-link mb-4" aria-current="page" href="#">Home</a>
-              <a class="footer-link mb-4" href="#">About us</a>
-              <a class="footer-link" href="#">Create your plan</a>
-            </div>
+            <!-- footer navbar end -->
 
             <ul
               class="d-flex flex-row justify-content-center mt-5 pb-5 footer-links"

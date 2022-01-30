@@ -22,6 +22,8 @@
 @import "..//scss/components/hamburger";
 @import "..//scss/components/footer";
 @import "..//scss/components/mobileNav";
+@import "..//scss/components/sub-card";
+@import "..//scss/components/modal";
 
 * {
   padding: 0;
@@ -33,4 +35,11 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   background: $LightCream;
+}
+
+.arrow {
+  cursor: pointer;
+}
+.arrow.active {
+  transform: rotate(180deg);
 }

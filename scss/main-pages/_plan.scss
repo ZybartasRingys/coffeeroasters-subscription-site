@@ -59,18 +59,31 @@
 
 // list
 
+.list {
+  height: 81px;
+  border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+}
+
 //list items
 
 .list-item {
   @include frauces24px;
   color: $DarkGreyBlue;
   opacity: 0.4;
+  cursor: pointer;
+}
+
+.list-item.active {
+  color: $DarkGreyBlue;
+  opacity: 1;
 }
 
 .arrow {
   width: 19px;
   height: 12px;
 }
+
+//collapse
 
 .sub-card {
   background-color: $CardBackground;

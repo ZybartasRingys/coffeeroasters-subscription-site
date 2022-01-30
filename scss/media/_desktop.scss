@@ -98,12 +98,12 @@
   }
 
   .footer-navbar {
-    display: flex;
-    margin-top: 0 !important;
+    margin-top: 11px !important;
   }
 
   .footer-links {
-    margin-top: 0 !important;
+    margin-top: 0px !important;
+    margin-right: 40px;
   }
 
   /* footer end */
@@ -266,6 +266,30 @@
   /* Steps section end*/
 
   /* Order section*/
+
+  // order cards!
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .sub-card {
+      height: 250px;
+      margin: 0 5px;
+      cursor: pointer;
+
+      h5 {
+        margin-top: 20px;
+        margin-bottom: 24px;
+        pointer-events: none;
+      }
+
+      p {
+        pointer-events: none;
+      }
+    }
+  }
 
   .question {
     width: 900px !important;

@@ -103,7 +103,7 @@
 
   .footer-navbar {
     flex-direction: row !important;
-    justify-content: center;
+    margin-top: 35px;
 
     .footer-link {
       margin-left: 30px;
@@ -249,12 +249,36 @@
     margin-left: 40px;
   }
 
-  // order
+  /* Order section */
+
+  .options {
+    display: none;
+  }
 
   // question btn
 
   .question {
     width: 390px !important;
+  }
+
+  //sub-cards!
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+
+    .sub-card {
+      height: 250px;
+      margin: 0 5px;
+      padding: 10px;
+      cursor: pointer;
+
+      h5 {
+        margin-top: 20px;
+        margin-bottom: 24px;
+      }
+    }
   }
 
   .list {
@@ -270,4 +294,6 @@
   .summary-text {
     height: 208px !important;
   }
+
+  /* Order section end */
 }

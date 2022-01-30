@@ -12328,6 +12328,11 @@ fieldset:disabled .btn {
 
 /* steps  section end*/
 /* order section*/
+.list {
+  height: 81px;
+  border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+}
+
 .list-item {
   font-family: "Fraunces";
   font-style: normal;
@@ -12336,6 +12341,12 @@ fieldset:disabled .btn {
   line-height: 32px;
   color: #333d4b;
   opacity: 0.4;
+  cursor: pointer;
+}
+
+.list-item.active {
+  color: #333d4b;
+  opacity: 1;
 }
 
 .arrow {
@@ -12456,6 +12467,14 @@ fieldset:disabled .btn {
     display: none;
   }
   /* how it works end*/
+  /* footer */
+  .footer-navbar {
+    margin-top: 48px;
+  }
+  .footer-navbar .footer-link {
+    margin-bottom: 24px;
+  }
+  /* footer end */
 }
 
 /* index mobile end */
@@ -12589,6 +12608,9 @@ fieldset:disabled .btn {
     background-color: #2c343e;
   }
   /*  Order section*/
+  .options {
+    display: none;
+  }
   .list {
     display: none;
   }
@@ -12722,9 +12744,7 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-top: 35px;
   }
   .footer-navbar .footer-link {
     margin-left: 30px;
@@ -12855,8 +12875,29 @@ fieldset:disabled .btn {
     height: 26px !important;
     margin-left: 40px;
   }
+  /* Order section */
+  .options {
+    display: none;
+  }
   .question {
     width: 390px !important;
+  }
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+  .cards .sub-card {
+    height: 250px;
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .cards .sub-card h5, .cards .sub-card .h5 {
+    margin-top: 20px;
+    margin-bottom: 24px;
   }
   .list {
     display: none;
@@ -12867,6 +12908,7 @@ fieldset:disabled .btn {
   .summary-text {
     height: 208px !important;
   }
+  /* Order section end */
 }
 
 /* INDEX DESKTOP*/
@@ -12967,13 +13009,11 @@ fieldset:disabled .btn {
             justify-content: space-between;
   }
   .footer-navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0 !important;
+    margin-top: 11px !important;
   }
   .footer-links {
-    margin-top: 0 !important;
+    margin-top: 0px !important;
+    margin-right: 40px;
   }
   /* footer end */
 }
@@ -13126,6 +13166,26 @@ fieldset:disabled .btn {
   }
   /* Steps section end*/
   /* Order section*/
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .cards .sub-card {
+    height: 250px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .cards .sub-card h5, .cards .sub-card .h5 {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    pointer-events: none;
+  }
+  .cards .sub-card p {
+    pointer-events: none;
+  }
   .question {
     width: 900px !important;
   }
@@ -13274,6 +13334,62 @@ fieldset:disabled .btn {
   height: 244px;
 }
 
+.sub-card:hover {
+  background-color: #fdd6ba;
+}
+
+.sub-card.active {
+  background-color: #0e8784;
+}
+
+.modal-container {
+  width: 540px;
+  height: 597px;
+}
+
+.modal-header {
+  width: 540px;
+  height: 136px;
+  background-color: #333d4b;
+}
+
+.modal-header h5, .modal-header .h5 {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-left: 56px;
+}
+
+.modal-order-text {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  margin-left: 56px;
+  padding-right: 20px;
+}
+
+.modal-order-text span {
+  color: #0e8784;
+}
+
+.order-p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333d4b;
+  opacity: 0.8;
+  margin-left: 56px;
+  margin-right: 80px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13285,5 +13401,14 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   background: #fefcf7;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */
