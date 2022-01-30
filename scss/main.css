@@ -12342,11 +12342,17 @@ fieldset:disabled .btn {
   color: #333d4b;
   opacity: 0.4;
   cursor: pointer;
+  border: none;
+  background-color: #fefcf7;
 }
 
-.list-item.active {
+.list:hover .list-item {
   color: #333d4b;
   opacity: 1;
+}
+
+.list:hover .number {
+  color: #0e8784;
 }
 
 .arrow {
@@ -12358,6 +12364,7 @@ fieldset:disabled .btn {
   background-color: #f4f1eb;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .sub-card h5, .sub-card .h5 {
@@ -12367,6 +12374,7 @@ fieldset:disabled .btn {
   font-size: 24px;
   line-height: 32px;
   color: #333d4b;
+  pointer-events: none;
 }
 
 .sub-card p {
@@ -12376,6 +12384,7 @@ fieldset:disabled .btn {
   font-size: 15px;
   line-height: 25px;
   color: #333d4b;
+  pointer-events: none;
 }
 
 .summary-text {
@@ -12417,6 +12426,15 @@ fieldset:disabled .btn {
 }
 
 /* order section end*/
+.value {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+
 /* create plan  end */
 /* index mobile */
 @media (max-width: 767.98px) {
@@ -12444,6 +12462,7 @@ fieldset:disabled .btn {
   }
   .about-text {
     padding: 10px;
+    margin-left: 20px;
   }
   /* hero section end*/
   /* collection section*/
@@ -12572,6 +12591,7 @@ fieldset:disabled .btn {
   .hq .card-img-top {
     width: 40px;
     height: 49px;
+    margin-bottom: 38px;
   }
   .hq-card {
     width: 100%;
@@ -12650,6 +12670,34 @@ fieldset:disabled .btn {
     color: #0e8784;
   }
   /*  Order section end*/
+  /*  MODAL*/
+  .modal-container {
+    width: 327px !important;
+    height: 597px;
+    border: none;
+  }
+  .modal-header {
+    width: 327px !important;
+    height: 88px !important;
+  }
+  .modal-order-text {
+    width: 279px !important;
+    height: 220px;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    line-height: 40px !important;
+  }
+  .order-p {
+    width: 279px !important;
+    height: 125px;
+    margin-left: 0 !important;
+  }
+  .value {
+    display: none;
+  }
+  .checkout-btn {
+    width: 279px !important;
+  }
 }
 
 /* create plan mobile end */
@@ -12694,6 +12742,7 @@ fieldset:disabled .btn {
   }
   .coffe-card .card-body {
     text-align: left !important;
+    margin-left: 65px;
   }
   /* collection section end*/
   /* why section */
@@ -12763,6 +12812,7 @@ fieldset:disabled .btn {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 124px;
   }
   .about-text {
     margin-left: 55px !important;
@@ -12839,6 +12889,9 @@ fieldset:disabled .btn {
     display: -ms-flexbox;
     display: flex;
   }
+  .hq-card .card-img-top {
+    margin-bottom: 20px;
+  }
   .card-body {
     padding: 0;
   }
@@ -12856,6 +12909,7 @@ fieldset:disabled .btn {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    margin-bottom: 122px;
   }
   .plan-text {
     margin-left: 55px;
@@ -12867,9 +12921,6 @@ fieldset:disabled .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .circles-col {
-    margin-left: 30px;
   }
   .circles {
     height: 26px !important;
@@ -12909,6 +12960,9 @@ fieldset:disabled .btn {
     height: 208px !important;
   }
   /* Order section end */
+  .mobile-value {
+    display: none;
+  }
 }
 
 /* INDEX DESKTOP*/
@@ -12984,8 +13038,8 @@ fieldset:disabled .btn {
   .how-heading h1, .how-heading .h1 {
     font-size: 24px;
   }
-  .circles-col {
-    margin-left: 100px;
+  .circles-index {
+    margin-left: 20px;
   }
   .how-card {
     margin-right: 150px;
@@ -13043,7 +13097,7 @@ fieldset:disabled .btn {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
-    margin-bottom: 256px;
+    margin-bottom: 236px;
   }
   .our-photo {
     height: 520px;
@@ -13102,7 +13156,7 @@ fieldset:disabled .btn {
   /* quality section end */
   /* quality section  */
   .hq-cards {
-    margin-top: 168px;
+    margin-top: 148px;
   }
   .h-cards {
     display: -webkit-box;
@@ -13176,21 +13230,21 @@ fieldset:disabled .btn {
   .cards .sub-card {
     height: 250px;
     margin: 0 5px;
-    cursor: pointer;
   }
   .cards .sub-card h5, .cards .sub-card .h5 {
     margin-top: 20px;
     margin-bottom: 24px;
-    pointer-events: none;
-  }
-  .cards .sub-card p {
-    pointer-events: none;
   }
   .question {
     width: 900px !important;
   }
   .summary-text {
     height: 208px;
+  }
+  /* Order section end*/
+  /* MODAL*/
+  .mobile-value {
+    display: none;
   }
 }
 
@@ -13203,6 +13257,10 @@ fieldset:disabled .btn {
   line-height: 15px;
   color: #83888f;
   text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #333d4b;
 }
 
 .main-btn {
@@ -13234,6 +13292,8 @@ fieldset:disabled .btn {
   line-height: 32px;
   color: #83888f;
   text-align: start;
+  border: none;
+  background-color: #fefcf7;
 }
 
 .question:hover {
@@ -13251,6 +13311,10 @@ fieldset:disabled .btn {
   border: 2px solid #0e8784;
   border-radius: 50%;
   margin-bottom: -16px;
+}
+
+.circles-index {
+  border-bottom: 2px solid #fdd6ba;
 }
 
 .hamburger {
@@ -13288,11 +13352,16 @@ fieldset:disabled .btn {
 
 .footer-links li {
   list-style: none;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .footer-link {
   text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fefcf7;
+  cursor: pointer;
 }
 
 .mobile-nav {
@@ -13345,12 +13414,14 @@ fieldset:disabled .btn {
 .modal-container {
   width: 540px;
   height: 597px;
+  border: none;
 }
 
 .modal-header {
   width: 540px;
   height: 136px;
   background-color: #333d4b;
+  border: none;
 }
 
 .modal-header h5, .modal-header .h5 {
@@ -13363,6 +13434,10 @@ fieldset:disabled .btn {
   margin-left: 56px;
 }
 
+.modal-body {
+  background-color: #fefcf7;
+}
+
 .modal-order-text {
   font-family: "Fraunces";
   font-style: normal;
@@ -13372,6 +13447,7 @@ fieldset:disabled .btn {
   color: #83888f;
   margin-left: 56px;
   padding-right: 20px;
+  border: none;
 }
 
 .modal-order-text span {
@@ -13388,6 +13464,11 @@ fieldset:disabled .btn {
   opacity: 0.8;
   margin-left: 56px;
   margin-right: 80px;
+}
+
+.modal-footer {
+  border: none;
+  background-color: #fefcf7;
 }
 
 * {

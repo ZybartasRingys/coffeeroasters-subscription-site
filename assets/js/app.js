@@ -5,6 +5,7 @@ const cardsText = document.querySelectorAll("#text");
 const arrow = document.querySelectorAll(".arrow");
 const collapseBtn = document.querySelectorAll(".question");
 const listItem = document.querySelectorAll(".list-item");
+const valueSpan = document.getElementsByClassName("value");
 
 //cards
 const firstCards = document.querySelectorAll("#first-card");
@@ -20,14 +21,18 @@ const howMuchSpan = document.getElementsByClassName("how-much");
 const grindSpan = document.getElementsByClassName("grind");
 const deliverSpan = document.getElementsByClassName("deliver");
 
+const weekSpan = document.getElementById("week");
+const twoWeekSpan = document.getElementById("two-weeks");
+const monthSpan = document.getElementById("month");
+
 //  arrays
 
 const cardsArr = Array.from(firstCards);
 const secondArr = Array.from(secondCards);
+const fifthArr = Array.from(fifthCards);
 const hArr = Array.from(cardsText);
 const listArr = Array.from(listItem);
-
-console.log(listArr);
+const arrowArr = Array.from(arrow);
 
 /* Mobile nav  */
 
@@ -102,6 +107,12 @@ fifthCards.forEach((card) => {
   card.addEventListener("click", function (e) {
     deliverSpan[0].innerHTML = e.target.firstElementChild.innerText;
     deliverSpan[1].innerHTML = e.target.firstElementChild.innerText;
+  });
+
+  card.addEventListener("click", function (e) {
+    for (let i = 0; i < fifthArr.length; i++) {
+      console.log(fifthArr[i]);
+    }
   });
 });
 

@@ -13,10 +13,15 @@
 .footer-links {
   li {
     list-style: none;
-    margin-right: 20px;
+    margin-right: 25px;
   }
 }
 
 .footer-link {
   text-decoration: none;
+
+  &:hover {
+    color: $LightCream;
+    cursor: pointer;
+  }
 }

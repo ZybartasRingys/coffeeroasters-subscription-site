@@ -71,11 +71,19 @@
   color: $DarkGreyBlue;
   opacity: 0.4;
   cursor: pointer;
+  border: none;
+  background-color: $LightCream;
 }
 
-.list-item.active {
-  color: $DarkGreyBlue;
-  opacity: 1;
+.list:hover {
+  .list-item {
+    color: $DarkGreyBlue;
+    opacity: 1;
+  }
+
+  .number {
+    color: $Darkcyan;
+  }
 }
 
 .arrow {
@@ -89,14 +97,17 @@
   background-color: $CardBackground;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
   h5 {
     @include frauces24px;
     color: $DarkGreyBlue;
+    pointer-events: none;
   }
 
   p {
     @include barlow15px;
     color: $DarkGreyBlue;
+    pointer-events: none;
   }
 }
 
@@ -129,5 +140,10 @@
 }
 
 /* order section end*/
+
+.value {
+  @include frauces32px;
+  color: $DarkGreyBlue;
+}
 
 /* create plan  end */

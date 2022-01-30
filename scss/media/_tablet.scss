@@ -40,6 +40,7 @@
     background: RGBA(254, 252, 247, 0) !important;
     .card-body {
       text-align: left !important;
+      margin-left: 65px;
     }
   }
 
@@ -124,6 +125,7 @@
     height: 400px;
     background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
     @include backgroundIMG;
+    margin-bottom: 124px;
   }
 
   .about-text {
@@ -203,6 +205,12 @@
     display: flex;
   }
 
+  .hq-card {
+    .card-img-top {
+      margin-bottom: 20px;
+    }
+  }
+
   .card-body {
     padding: 0;
   }
@@ -222,6 +230,7 @@
     background-image: url(/assets/plan/tablet/image-hero-blackcup.jpg);
     @include backgroundIMG;
     border-radius: 10px;
+    margin-bottom: 122px;
   }
 
   .plan-text {
@@ -235,13 +244,8 @@
 
   .plan-steps {
     height: 640px;
-    // background-color: $FooterBackground;
-    display: flex;
-    // flex-direction: row !important;
-  }
 
-  .circles-col {
-    margin-left: 30px;
+    display: flex;
   }
 
   .circles {
@@ -296,4 +300,8 @@
   }
 
   /* Order section end */
+
+  .mobile-value {
+    display: none;
+  }
 }

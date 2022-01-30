@@ -1,12 +1,14 @@
 .modal-container {
   width: 540px;
   height: 597px;
+  border: none;
 }
 
 .modal-header {
   width: 540px;
   height: 136px;
   background-color: $DarkGreyBlue;
+  border: none;
   h5 {
     @include frauces24px;
     color: $CardHeader;
@@ -14,11 +16,16 @@
   }
 }
 
+.modal-body {
+  background-color: $LightCream;
+}
+
 .modal-order-text {
   @include frauces24px;
   color: $Grey;
   margin-left: 56px;
   padding-right: 20px;
+  border: none;
 
   span {
     color: $Darkcyan;
@@ -31,4 +38,9 @@
   opacity: 0.8;
   margin-left: 56px;
   margin-right: 80px;
+}
+
+.modal-footer {
+  border: none;
+  background-color: $LightCream;
 }

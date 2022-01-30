@@ -25,6 +25,8 @@
   @include frauces24px;
   color: $Question;
   text-align: start;
+  border: none;
+  background-color: $LightCream;
 
   &:hover {
     color: $Question;

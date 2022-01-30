@@ -38,6 +38,14 @@
   line-height: 32px;
 }
 
+@mixin frauces32px {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+}
+
 @mixin frauces40px {
   font-family: "Fraunces";
   font-style: normal;

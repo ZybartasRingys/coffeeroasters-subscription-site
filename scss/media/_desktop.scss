@@ -76,8 +76,8 @@
     }
   }
 
-  .circles-col {
-    margin-left: 100px;
+  .circles-index {
+    margin-left: 20px;
   }
 
   .how-card {
@@ -136,7 +136,7 @@
 
   .our-commitment {
     flex-direction: row !important;
-    margin-bottom: 256px;
+    margin-bottom: 236px;
   }
 
   .our-photo {
@@ -193,7 +193,7 @@
   /* quality section  */
 
   .hq-cards {
-    margin-top: 168px;
+    margin-top: 148px;
   }
 
   .h-cards {
@@ -277,16 +277,10 @@
     .sub-card {
       height: 250px;
       margin: 0 5px;
-      cursor: pointer;
 
       h5 {
         margin-top: 20px;
         margin-bottom: 24px;
-        pointer-events: none;
-      }
-
-      p {
-        pointer-events: none;
       }
     }
   }
@@ -297,5 +291,13 @@
 
   .summary-text {
     height: 208px;
+  }
+
+  /* Order section end*/
+
+  /* MODAL*/
+
+  .mobile-value {
+    display: none;
   }
 }

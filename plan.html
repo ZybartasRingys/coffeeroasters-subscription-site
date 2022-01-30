@@ -200,27 +200,59 @@
             <div class="col col-xxl-10 mx-auto d-flex flex-column flex-xxl-row">
               <div class="col options col-xxl-3 mt-5">
                 <div class="col list d-flex align-items-center">
-                  <h5 class="list-item">
+                  <button
+                    class="list-item"
+                    data-toggle="collapse"
+                    data-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
                     <span class="number">01</span> Preferences
-                  </h5>
+                  </button>
                 </div>
                 <div class="col list d-flex align-items-center">
-                  <h5 class="list-item">
+                  <button
+                    class="list-item"
+                    data-toggle="collapse"
+                    data-target="#collapseExample1"
+                    aria-expanded="false"
+                    aria-controls="collapseExample1"
+                  >
                     <span class="number">02</span> Bean type
-                  </h5>
+                  </button>
                 </div>
                 <div class="col list d-flex align-items-center">
-                  <h5 class="list-item">
+                  <button
+                    class="list-item"
+                    data-toggle="collapse"
+                    data-target="#collapseExample2"
+                    aria-expanded="false"
+                    aria-controls="collapseExample2"
+                  >
                     <span class="number">03</span> Quantity
-                  </h5>
+                  </button>
                 </div>
                 <div class="col list d-flex align-items-center">
-                  <h5 class="list-item">
+                  <button
+                    class="list-item"
+                    data-toggle="collapse"
+                    data-target="#collapseExample3"
+                    aria-expanded="false"
+                    aria-controls="collapseExample3"
+                  >
                     <span class="number">04</span> Grind option
-                  </h5>
+                  </button>
                 </div>
                 <div class="col list d-flex align-items-center">
-                  <h5 class="list-item">05 Deliveries</h5>
+                  <button
+                    class="list-item"
+                    data-toggle="collapse"
+                    data-target="#collapseExample4"
+                    aria-expanded="false"
+                    aria-controls="collapseExample4"
+                  >
+                    <span class="number">05</span> Deliveries
+                  </button>
                 </div>
               </div>
 
@@ -232,7 +264,7 @@
                 <div class="col-11 col-xxl-9 mx-auto mt-5">
                   <p class="d-flex flex-row justify-content-between">
                     <button
-                      class="btn question"
+                      class="question"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseExample"
@@ -288,7 +320,7 @@
                 <div class="col-11 col-xxl-9 mx-auto mt-5">
                   <p class="d-flex flex-row justify-content-between">
                     <button
-                      class="btn question"
+                      class="question"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseExample1"
@@ -345,7 +377,7 @@
                 <div class="col-11 col-xxl-9 mx-auto mt-5">
                   <p class="d-flex flex-row justify-content-between">
                     <button
-                      class="btn question"
+                      class="question"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseExample2"
@@ -402,7 +434,7 @@
                 <div class="col-11 col-xxl-9 mx-auto mt-5">
                   <p class="d-flex flex-row justify-content-between">
                     <button
-                      class="btn question"
+                      class="question"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseExample3"
@@ -459,7 +491,7 @@
                 <div class="col-11 col-xxl-9 mx-auto mt-5">
                   <p class="d-flex flex-row justify-content-between">
                     <button
-                      class="btn question"
+                      class="question"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseExample4"
@@ -482,8 +514,8 @@
                       >
                         <h5>Every week</h5>
                         <p>
-                          $14.00 per shipment. Includes free first-class
-                          shipping.
+                          <span id="week">$14.00</span> per shipment. Includes
+                          free first-class shipping.
                         </p>
                       </div>
                       <div
@@ -492,7 +524,8 @@
                       >
                         <h5>Every 2 weeks</h5>
                         <p>
-                          $17.25 per shipment. Includes free priority shipping.
+                          <span id="two-weeks">$17.25</span> per shipment.
+                          Includes free priority shipping.
                         </p>
                       </div>
                       <div
@@ -501,7 +534,8 @@
                       >
                         <h5>Every month</h5>
                         <p>
-                          $22.50 per shipment. Includes free priority shipping.
+                          <span id="month">$22.50</span> per shipment. Includes
+                          free priority shipping.
                         </p>
                       </div>
                     </div>
@@ -522,7 +556,10 @@
                 aria-labelledby="exampleModalCenterTitle"
                 aria-hidden="true"
               >
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div
+                  class="modal-dialog modal-dialog-centered d-flex flex-column"
+                  role="document"
+                >
                   <div class="modal-content modal-container">
                     <div class="modal-header">
                       <h5 class="modal-title pl-3" id="exampleModalLongTitle">
@@ -544,9 +581,11 @@
                         discount codes can also be redeemed at the checkout.
                       </p>
                     </div>
-                    <div class="modal-footer">
-                      <span class="value"> $14.00 / mo</span>
-                      <button type="button" class="btn main-btn">
+                    <div
+                      class="modal-footer d-flex justify-content-center align-items-center"
+                    >
+                      <span class="value"></span>
+                      <button type="button" class="btn main-btn checkout-btn">
                         Checkout
                       </button>
                     </div>
@@ -599,7 +638,7 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-11 mx-auto mt-5 mb-5 pt-5 footer-container text-center"
+            class="col-12 mx-auto mt-5 mb-5 pt-5 footer-container text-center"
           >
             <div
               class="col col-xxl-7 d-flex flex-column flex-md-column flex-xxl-row justify-content-between"
@@ -621,9 +660,11 @@
               <div
                 class="col col-md-7 col-xxl-5 mx-auto d-flex flex-column flex-xxl-row footer-navbar justify-content-between"
               >
-                <a class="footer-link" aria-current="page" href="#">Home</a>
-                <a class="footer-link" href="#">About us</a>
-                <a class="footer-link" href="#">Create your plan</a>
+                <a class="footer-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+                <a class="footer-link" href="/about.html">About us</a>
+                <a class="footer-link" href="/plan.html">Create your plan</a>
               </div>
             </div>
 
