@@ -8,11 +8,11 @@ const listItem = document.querySelectorAll(".list-item");
 const valueSpan = document.getElementsByClassName("value");
 
 //cards
-const firstCards = document.querySelectorAll("#first-card");
-const secondCards = document.querySelectorAll("#second-card");
-const thirdCards = document.querySelectorAll("#third-card");
-const fourthCards = document.querySelectorAll("#fourth-card");
-const fifthCards = document.querySelectorAll("#fifth-card");
+const firstCards = document.querySelectorAll(".first-card");
+const secondCards = document.querySelectorAll(".second-card");
+const thirdCards = document.querySelectorAll(".third-card");
+const fourthCards = document.querySelectorAll(".fourth-card");
+const fifthCards = document.querySelectorAll(".fifth-card");
 
 //spans
 const howSpan = document.getElementsByClassName("how");
