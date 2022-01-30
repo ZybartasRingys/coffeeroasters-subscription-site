@@ -31,7 +31,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Mobile-first workflow
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
 - CSS Grid
 - Bootstrap
