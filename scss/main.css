@@ -12058,7 +12058,7 @@ fieldset:disabled .btn {
   border-radius: 10px;
 }
 
-.why-container .why-text h1, .why-container .why-text .h1 {
+.why-container .why-text h2, .why-container .why-text .h2 {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
@@ -12082,7 +12082,7 @@ fieldset:disabled .btn {
   border-radius: 8px;
 }
 
-.testemonials-card h4, .testemonials-card .h4 {
+.testemonials-card h2, .testemonials-card .h2 {
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
