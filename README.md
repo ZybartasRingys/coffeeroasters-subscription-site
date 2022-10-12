@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://coffeeroasters-subscription-site-byzr.netlify.app/)
+- Live Site URL: (https://coffeeroasters-subscription-site-byzr.netlify.app/)
 
 ## My process
 
